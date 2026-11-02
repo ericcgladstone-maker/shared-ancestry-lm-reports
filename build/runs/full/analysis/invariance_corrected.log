@@ -1,0 +1,72 @@
+  blocks 20/1260, calls made 0
+  blocks 40/1260, calls made 0
+  blocks 60/1260, calls made 0
+  blocks 80/1260, calls made 0
+  blocks 100/1260, calls made 0
+  blocks 120/1260, calls made 0
+  blocks 140/1260, calls made 0
+  blocks 160/1260, calls made 0
+  blocks 180/1260, calls made 0
+  blocks 200/1260, calls made 0
+  blocks 220/1260, calls made 0
+  blocks 240/1260, calls made 0
+  blocks 260/1260, calls made 0
+  blocks 280/1260, calls made 0
+  blocks 300/1260, calls made 0
+  blocks 320/1260, calls made 0
+  blocks 340/1260, calls made 0
+  blocks 360/1260, calls made 0
+  blocks 380/1260, calls made 0
+  blocks 400/1260, calls made 0
+  blocks 420/1260, calls made 0
+  blocks 440/1260, calls made 0
+  blocks 460/1260, calls made 0
+  blocks 480/1260, calls made 0
+  blocks 500/1260, calls made 0
+  blocks 520/1260, calls made 0
+  blocks 540/1260, calls made 0
+  blocks 560/1260, calls made 0
+  blocks 580/1260, calls made 0
+  blocks 600/1260, calls made 0
+  blocks 620/1260, calls made 0
+  blocks 640/1260, calls made 0
+  blocks 660/1260, calls made 0
+  blocks 680/1260, calls made 0
+  blocks 700/1260, calls made 0
+  blocks 720/1260, calls made 0
+  blocks 740/1260, calls made 0
+  blocks 760/1260, calls made 0
+  blocks 780/1260, calls made 0
+  blocks 800/1260, calls made 0
+  blocks 820/1260, calls made 0
+  blocks 840/1260, calls made 0
+  blocks 860/1260, calls made 0
+  blocks 880/1260, calls made 0
+  blocks 900/1260, calls made 0
+  blocks 920/1260, calls made 0
+  blocks 940/1260, calls made 0
+  blocks 960/1260, calls made 0
+  blocks 980/1260, calls made 0
+  blocks 1000/1260, calls made 0
+  blocks 1020/1260, calls made 0
+  blocks 1040/1260, calls made 0
+  blocks 1060/1260, calls made 0
+  blocks 1080/1260, calls made 0
+  blocks 1100/1260, calls made 0
+  blocks 1120/1260, calls made 0
+  blocks 1140/1260, calls made 0
+  blocks 1160/1260, calls made 0
+  blocks 1180/1260, calls made 0
+  blocks 1200/1260, calls made 0
+  blocks 1220/1260, calls made 0
+  blocks 1240/1260, calls made 0
+  blocks 1260/1260, calls made 0
+[68s] order 123: accuracy 0.641, odd 0.883
+[94s] order 132: accuracy 0.641, odd 0.883
+[113s] order 213: accuracy 0.641, odd 0.883
+[131s] order 231: accuracy 0.641, odd 0.883
+[133s] order 312: accuracy 0.641, odd 0.883
+[136s] order 321: accuracy 0.641, odd 0.883
+[138s] order random per set: accuracy 0.641, odd 0.883
+wrote invariance_corrected.md
+exit 0

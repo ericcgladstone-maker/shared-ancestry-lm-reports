@@ -1,0 +1,12 @@
+{
+ "blocks": 180,
+ "set_rows": 2700,
+ "calls_made": 3600,
+ "errors": {},
+ "time": 1793629571.084939,
+ "spend_this_run": {
+  "anthropic": 0.0,
+  "openai": 0.0,
+  "google": 0.5873604999999862
+ }
+}

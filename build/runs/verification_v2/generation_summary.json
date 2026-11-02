@@ -1,0 +1,20 @@
+{
+ "calls_made": 0,
+ "failures": {},
+ "errors": {},
+ "coverage": {
+  "gemini-3.5-flash-lite": {
+   "planned": 330,
+   "realized": 330
+  },
+  "claude-haiku-5-5": {
+   "planned": 200,
+   "realized": 200
+  },
+  "gpt-6-luna": {
+   "planned": 200,
+   "realized": 200
+  }
+ },
+ "time": 1793417949.7051892
+}

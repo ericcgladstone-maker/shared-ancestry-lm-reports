@@ -1,0 +1,9 @@
+[75s] D0 NC0 features auc 0.489 p_up 0.632 p2 0.714
+[253s] D0 NC0 embedding auc 0.493 p_up 0.680 p2 0.680
+[325s] NULL-a NULL-b features auc 0.533 p_up 0.098 p2 0.216
+[499s] NULL-a NULL-b embedding auc 0.497 p_up 0.570 p2 0.855
+[528s] D0 NULL-a features auc 0.521 p_up 0.180 p2 0.425
+[691s] D0 NULL-a embedding auc 0.522 p_up 0.140 p2 0.210
+[827s] SD-same SI-same features auc 0.568 p_up 0.005 p2 0.017
+[997s] SD-same SI-same embedding auc 0.480 p_up 0.895 p2 0.265
+wrote /Users/ericgladstone/My Drive (eric.c.gladstone@gmail.com)/Projects/Papers/Machine Back Tracing of Content Across Communication Topologies/build/runs/replication/analysis.md

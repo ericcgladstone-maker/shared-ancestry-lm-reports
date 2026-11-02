@@ -1,0 +1,23 @@
+control: 180 blocks, code 4a8ee551a337
+  blocks 20/180, calls made 140
+  blocks 40/180, calls made 277
+  blocks 60/180, calls made 417
+  blocks 80/180, calls made 560
+  blocks 100/180, calls made 684
+  blocks 120/180, calls made 766
+  blocks 140/180, calls made 870
+  blocks 160/180, calls made 1009
+  blocks 180/180, calls made 1080
+control done: calls made 1080, failed trials 0, errors 0
+hub_diamond: 180 blocks, code 4a8ee551a337
+  blocks 20/180, calls made 1297
+  blocks 40/180, calls made 1512
+  blocks 60/180, calls made 1721
+  blocks 80/180, calls made 1915
+  blocks 100/180, calls made 2117
+  blocks 120/180, calls made 2204
+  blocks 140/180, calls made 2399
+  blocks 160/180, calls made 2594
+  blocks 180/180, calls made 2701
+hub_diamond done: calls made 2701, failed trials 0, errors 0
+spend: {'anthropic': 45.24065360000009, 'openai': 21.291878949999983, 'google': 3.3177097000000013}

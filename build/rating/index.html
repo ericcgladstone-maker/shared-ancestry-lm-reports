@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proposition Coding</title>
+<style>
+  :root { --bg:#fbfbf9; --fg:#1d1d1b; --muted:#6b6b66; --line:#d9d8d2; --accent:#2b5c8a; --card:#ffffff; --warn:#a33a2a; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#16171a; --fg:#e8e7e3; --muted:#9a9993; --line:#33343a; --accent:#7fb0de; --card:#1e1f23; --warn:#e58a7a; } }
+  :root[data-theme="dark"] { --bg:#16171a; --fg:#e8e7e3; --muted:#9a9993; --line:#33343a; --accent:#7fb0de; --card:#1e1f23; --warn:#e58a7a; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 system-ui, sans-serif; }
+  main { max-width:1100px; margin:0 auto; padding:16px; display:grid; gap:16px; grid-template-columns:1fr; }
+  @media (min-width: 900px) { main { grid-template-columns: 1.1fr 1fr; } .sticky { position:sticky; top:16px; align-self:start; } }
+  section { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px; min-width:0; }
+  h1 { font-size:18px; margin:0 0 8px; } h2 { font-size:15px; margin:16px 0 8px; color:var(--muted); }
+  .msg { white-space:pre-wrap; border-left:3px solid var(--line); padding-left:12px; overflow-wrap:anywhere; }
+  table { width:100%; border-collapse:collapse; font-size:14px; } td, th { border-top:1px solid var(--line); padding:6px 4px; vertical-align:top; text-align:left; }
+  select, input, button { font:inherit; color:var(--fg); background:var(--bg); border:1px solid var(--line); border-radius:6px; padding:4px 8px; }
+  select.unset { border-color:var(--warn); }
+  button.primary { background:var(--accent); color:#fff; border-color:var(--accent); }
+  .bar { display:flex; gap:8px; flex-wrap:wrap; align-items:center; } .muted { color:var(--muted); font-size:14px; }
+  .warn { color:var(--warn); font-size:14px; min-height:1.5em; }
+</style>
+</head>
+<body>
+<main>
+  <section class="sticky">
+    <div class="bar"><h1>Proposition coding</h1><span class="muted" id="progress"></span></div>
+    <div class="bar">
+      <label>Coder ID <input id="coder" size="10"></label>
+      <label>Items file <input type="file" id="file" accept=".json"></label>
+    </div>
+    <h2>Report</h2>
+    <div class="msg" id="message">Enter your coder ID, then load your items file.</div>
+  </section>
+  <section>
+    <h2>Facts in the record</h2>
+    <table id="facts"></table>
+    <h2>Disputes</h2>
+    <table id="disputes"></table>
+    <div class="warn" id="warn"></div>
+    <div class="bar">
+      <button id="prev">Previous</button>
+      <button class="primary" id="save">Save and next</button>
+      <button id="export">Export JSON</button>
+      <button id="exportcsv">Export CSV</button>
+    </div>
+    <h2>Codebook (full rubric in validation/RUBRIC.md)</h2>
+    <p class="muted"><b>Stated</b>: the report asserts the fact or an equivalent proposition, in any wording. <b>Changed</b>: the report refers to the same thing but asserts a contradicting value, person, place, time, cause, sequence, or polarity. <b>Doubted</b>: the fact's content with added uncertainty the record does not have, and no contradicting detail. <b>Absent</b>: the fact's content cannot be recovered. Precedence: changed, then doubted, then stated, then absent. For each dispute: <b>first</b> or <b>second</b> if the report gives only that account, <b>both</b> if it gives both, <b>neither</b> if it gives neither. Dispute codes must agree with the two member facts. Code what the report says, not what you think is true.</p>
+  </section>
+</main>
+<script>
+// Items appear in an order shuffled by the file's seed and the coder ID, with no condition, structure, world, or model
+// information. Every save appends a record to the log; a recoded item adds a new record, and the latest counts.
+const STATES = ["stated", "changed", "doubted", "absent"], RES = ["first", "second", "both", "neither"];
+let items = [], order = [], pos = 0;
+const LOG_KEY = "residue-coding-log-v2";
+function readLog() { try { return JSON.parse(localStorage.getItem(LOG_KEY) || "[]"); } catch (e) { return []; } }
+function writeLog(log) { try { localStorage.setItem(LOG_KEY, JSON.stringify(log)); } catch (e) {} }
+let log = readLog();
+function shuffle(a, seed) { let s = Math.max(1, seed % 2147483647); const r = () => (s = (s * 16807) % 2147483647) / 2147483647;
+  for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+function hash(str) { let h = 7; for (const c of str) h = (h * 31 + c.charCodeAt(0)) % 2147483647; return h; }
+function el(tag, text) { const e = document.createElement(tag); if (text !== undefined) e.textContent = text; return e; }
+function select(attr, key, opts, value) {
+  const s = el("select"); s.dataset[attr] = key;
+  s.appendChild(el("option", "")); opts.forEach(o => s.appendChild(el("option", o)));
+  s.value = value || ""; s.className = s.value ? "" : "unset";
+  s.addEventListener("change", () => { s.className = s.value ? "" : "unset"; });
+  return s;
+}
+function latest(coder, id) { for (let i = log.length - 1; i >= 0; i--) if (log[i].coder === coder && log[i].item_id === id) return log[i]; return null; }
+function render() {
+  const it = items[order[pos]], coder = document.getElementById("coder").value.trim(), prev = latest(coder, it.item_id);
+  document.getElementById("progress").textContent = `${pos + 1} of ${items.length}` + (prev ? " (coded before)" : "");
+  document.getElementById("message").textContent = it.message;
+  document.getElementById("warn").textContent = "";
+  const ft = document.getElementById("facts"); ft.replaceChildren();
+  const h = el("tr"); h.append(el("th", "Fact"), el("th", "State")); ft.appendChild(h);
+  it.facts.forEach(f => { const tr = el("tr"), td = el("td");
+    td.append(select("pid", f.pid, STATES, prev && prev.facts[f.pid])); tr.append(el("td", f.text), td); ft.appendChild(tr); });
+  const dt = document.getElementById("disputes"); dt.replaceChildren();
+  const h2 = el("tr"); h2.append(el("th", "Accounts"), el("th", "Report gives")); dt.appendChild(h2);
+  it.disputes.forEach(d => { const tr = el("tr"), a = el("td"), td = el("td");
+    a.append(el("div", "First: " + d.first.text), el("div", "Second: " + d.second.text));
+    td.append(select("dispute", String(d.n), RES, prev && prev.disputes[String(d.n)])); tr.append(a, td); dt.appendChild(tr); });
+}
+function check(it, facts, disputes) {
+  const missing = Object.values(facts).concat(Object.values(disputes)).filter(v => !v).length;
+  if (missing) return `${missing} judgment(s) not yet chosen.`;
+  for (const d of it.disputes) {
+    const r = disputes[String(d.n)], a = facts[d.first.pid] !== "absent", b = facts[d.second.pid] !== "absent";
+    const ok = { first: a && !b, second: b && !a, both: a && b, neither: !a && !b }[r];
+    if (!ok) return `Dispute ${d.n} is coded "${r}", but its first account is ${a ? "present" : "absent"} and its second is ${b ? "present" : "absent"} in the fact codes.`;
+  }
+  return "";
+}
+document.getElementById("file").addEventListener("change", async e => {
+  const coder = document.getElementById("coder").value.trim();
+  if (!coder) { document.getElementById("message").textContent = "Enter your coder ID first, then load the file again."; return; }
+  const data = JSON.parse(await e.target.files[0].text());
+  items = data.items; order = shuffle([...items.keys()], (data.seed || 1) + hash(coder));
+  pos = Math.max(0, order.findIndex(i => !latest(coder, items[i].item_id)));
+  render();
+});
+document.getElementById("save").addEventListener("click", () => {
+  const coder = document.getElementById("coder").value.trim();
+  if (!coder || !items.length) return;
+  const it = items[order[pos]];
+  const facts = {}; document.querySelectorAll("[data-pid]").forEach(s => facts[s.dataset.pid] = s.value);
+  const disputes = {}; document.querySelectorAll("[data-dispute]").forEach(s => disputes[s.dataset.dispute] = s.value);
+  const problem = check(it, facts, disputes);
+  if (problem) { document.getElementById("warn").textContent = problem; return; }
+  log.push({ coder, item_id: it.item_id, facts, disputes, rubric: "RUBRIC.md 2026-10-31", time: new Date().toISOString() });
+  writeLog(log);
+  if (pos < items.length - 1) { pos++; render(); window.scrollTo(0, 0); }
+  else { document.getElementById("message").textContent = "All items coded. Export JSON and CSV."; }
+});
+document.getElementById("prev").addEventListener("click", () => { if (items.length && pos > 0) { pos--; render(); } });
+function download(name, text) { const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([text])); a.download = name; a.click(); }
+const stamp = () => (document.getElementById("coder").value.trim() || "coder") + "_" + new Date().toISOString().slice(0, 16).replace(/[:T]/g, "-");
+document.getElementById("export").addEventListener("click", () => download(`judgments_${stamp()}.json`, JSON.stringify(log, null, 1)));
+document.getElementById("exportcsv").addEventListener("click", () => {
+  const rows = [["coder", "item_id", "kind", "id", "value", "time"]];
+  log.forEach(r => { Object.entries(r.facts).forEach(([k, v]) => rows.push([r.coder, r.item_id, "fact", k, v, r.time]));
+                     Object.entries(r.disputes).forEach(([k, v]) => rows.push([r.coder, r.item_id, "dispute", k, v, r.time])); });
+  download(`judgments_${stamp()}.csv`, rows.map(r => r.map(x => `"${String(x).replace(/"/g, '""')}"`).join(",")).join("\n"));
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+  blocks 20/180, calls made 0
+  blocks 40/180, calls made 0
+  blocks 60/180, calls made 0
+  blocks 80/180, calls made 0
+  blocks 100/180, calls made 0
+  blocks 120/180, calls made 0
+  blocks 140/180, calls made 0
+  blocks 160/180, calls made 0
+  blocks 180/180, calls made 0
+rebuilt 180 blocks; failed trials in 0 blocks; errors 0
+reader groups 85, items per reader 2520
+  reader groups 10/170
+  reader groups 20/170
+  reader groups 30/170
+  reader groups 40/170
+  reader groups 50/170
+  reader groups 60/170
+  reader groups 70/170
+  reader groups 80/170
+  reader groups 90/170
+  reader groups 100/170
+  reader groups 110/170
+  reader groups 120/170
+  reader groups 130/170
+  reader groups 140/170
+  reader groups 150/170
+  reader groups 160/170
+  reader groups 170/170
+reader calls final 5040; uniform after retry 0
+usage: {"gpt-6.1-terra|single": {"prefix": 5379.328472222222, "read": 4853.456944444444, "write": 525.8715277777778, "uncached": 3.0, "out": 17.809722222222224, "n": 1440, "hit": 0.9618055555555556}, "claude-sonnet-5-5|single": {"prefix": 8892.266666666666, "read": 8557.122222222222, "write": 335.14444444444445, "uncached": 585.2701388888889, "out": 392.8986111111111, "n": 1440, "hit": 0.9618055555555556}, "gpt-6.1-terra|set": {"prefix": 16164.393518518518, "read": 14842.819444444445, "write": 1321.5740740740741, "uncached": 3.0, "out": 34.41203703703704, "n": 1080, "hit": 0.9722222222222222}, "claude-sonnet-5-5|set": {"prefix": 26114.633333333335, "read": 25389.22685185185, "write": 725.4064814814815, "uncached": 1510.5925925925926, "out": 496.86203703703706, "n": 1080, "hit": 0.9722222222222222}}
+spend: {'anthropic': 45.24065360000009, 'openai': 15.656465700000044, 'google': 2.7598070000000026}

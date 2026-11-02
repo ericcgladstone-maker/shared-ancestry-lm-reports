@@ -1,0 +1,97 @@
+{
+ "invariance": {
+  "n_sets": 540,
+  "n_y_sets": 180,
+  "orders": {
+   "123": {
+    "accuracy": 0.6407407407407407,
+    "three_structure_accuracy": 0.6592592592592592,
+    "mix_odd_correct": 0.8833333333333333,
+    "odd_slot_presented": {
+     "3": 180
+    }
+   },
+   "132": {
+    "accuracy": 0.6407407407407407,
+    "three_structure_accuracy": 0.6592592592592592,
+    "mix_odd_correct": 0.8833333333333333,
+    "odd_slot_presented": {
+     "2": 180
+    },
+    "max_abs_prob_diff_vs_identity": 2.220446049250313e-16,
+    "max_abs_structure_prob_diff_vs_identity": 0.0,
+    "sets_with_different_configuration": 0
+   },
+   "213": {
+    "accuracy": 0.6407407407407407,
+    "three_structure_accuracy": 0.6592592592592592,
+    "mix_odd_correct": 0.8833333333333333,
+    "odd_slot_presented": {
+     "3": 180
+    },
+    "max_abs_prob_diff_vs_identity": 4.440892098500626e-16,
+    "max_abs_structure_prob_diff_vs_identity": 0.0,
+    "sets_with_different_configuration": 0
+   },
+   "231": {
+    "accuracy": 0.6407407407407407,
+    "three_structure_accuracy": 0.6592592592592592,
+    "mix_odd_correct": 0.8833333333333333,
+    "odd_slot_presented": {
+     "2": 180
+    },
+    "max_abs_prob_diff_vs_identity": 3.3306690738754696e-16,
+    "max_abs_structure_prob_diff_vs_identity": 0.0,
+    "sets_with_different_configuration": 0
+   },
+   "312": {
+    "accuracy": 0.6407407407407407,
+    "three_structure_accuracy": 0.6592592592592592,
+    "mix_odd_correct": 0.8833333333333333,
+    "odd_slot_presented": {
+     "1": 180
+    },
+    "max_abs_prob_diff_vs_identity": 4.440892098500626e-16,
+    "max_abs_structure_prob_diff_vs_identity": 0.0,
+    "sets_with_different_configuration": 0
+   },
+   "321": {
+    "accuracy": 0.6407407407407407,
+    "three_structure_accuracy": 0.6592592592592592,
+    "mix_odd_correct": 0.8833333333333333,
+    "odd_slot_presented": {
+     "1": 180
+    },
+    "max_abs_prob_diff_vs_identity": 2.220446049250313e-16,
+    "max_abs_structure_prob_diff_vs_identity": 0.0,
+    "sets_with_different_configuration": 0
+   },
+   "random per set": {
+    "accuracy": 0.6407407407407407,
+    "three_structure_accuracy": 0.6592592592592592,
+    "mix_odd_correct": 0.8833333333333333,
+    "odd_slot_presented": {
+     "1": 66,
+     "2": 59,
+     "3": 55
+    },
+    "max_abs_prob_diff_vs_identity": 4.440892098500626e-16,
+    "max_abs_structure_prob_diff_vs_identity": 0.0,
+    "sets_with_different_configuration": 0
+   }
+  },
+  "rarity_fit": "own world excluded"
+ },
+ "gap_decomposition": {
+  "truth Y": {
+   "three-structure Y, demoted by the split": 28,
+   "correct": 66,
+   "three-structure wrong": 86
+  },
+  "truth three unconnected or out-star": {
+   "both wrong": 80,
+   "both correct": 262,
+   "five-configuration correct only (Y split below it)": 18
+  }
+ }
+}

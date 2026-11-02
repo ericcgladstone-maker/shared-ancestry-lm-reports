@@ -1,0 +1,15 @@
+{
+ "control": {
+  "blocks": 180,
+  "failures": {},
+  "errors": {},
+  "calls_made_so_far": 1080
+ },
+ "hub_diamond": {
+  "blocks": 180,
+  "failures": {},
+  "errors": {},
+  "calls_made_so_far": 2701
+ },
+ "time": 1793476468.2397819
+}

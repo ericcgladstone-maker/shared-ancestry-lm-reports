@@ -1,0 +1,4 @@
+stage 1: 899 messages, invalid after retry 0; spend {'anthropic': 45.24065360000009, 'openai': 17.578911200000054, 'google': 2.7598070000000026}
+stage 2: 360 messages, invalid after retry 0; spend {'anthropic': 45.24065360000009, 'openai': 18.340148950000042, 'google': 2.7598070000000026}
+stage 3: 899 messages, invalid after retry 0; spend {'anthropic': 45.24065360000009, 'openai': 20.222340950000017, 'google': 2.7598070000000026}
+stage 4: 504 messages, invalid after retry 0; spend {'anthropic': 45.24065360000009, 'openai': 21.291878949999983, 'google': 2.7598070000000026}

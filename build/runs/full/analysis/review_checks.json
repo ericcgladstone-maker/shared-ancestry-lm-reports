@@ -1,0 +1,228 @@
+{
+ "single_unshared": {
+  "gemini-3.5-flash-lite": {
+   "n_reports": 720,
+   "texts_shared_between_structures": 0,
+   "features": {
+    "auc": 0.526520061728395,
+    "lo": 0.4957310956790123,
+    "hi": 0.5585655864197531,
+    "p_gt_chance": 0.0835,
+    "verdict": "equivalent"
+   },
+   "embedding": {
+    "auc": 0.4896527777777778,
+    "lo": 0.4694317129629629,
+    "hi": 0.5091458333333333,
+    "p_gt_chance": 0.813,
+    "verdict": "equivalent"
+   }
+  },
+  "claude-haiku-5-5": {
+   "n_reports": 720,
+   "texts_shared_between_structures": 0,
+   "features": {
+    "auc": 0.5111111111111112,
+    "lo": 0.48483256172839506,
+    "hi": 0.5376126543209877,
+    "p_gt_chance": 0.237,
+    "verdict": "equivalent"
+   },
+   "embedding": {
+    "auc": 0.513425925925926,
+    "lo": 0.4943202160493827,
+    "hi": 0.5331489197530864,
+    "p_gt_chance": 0.129,
+    "verdict": "equivalent"
+   }
+  },
+  "gpt-6-luna": {
+   "n_reports": 720,
+   "texts_shared_between_structures": 0,
+   "features": {
+    "auc": 0.537800925925926,
+    "lo": 0.5118175154320987,
+    "hi": 0.5655875771604938,
+    "p_gt_chance": 0.0105,
+    "verdict": "equivalent"
+   },
+   "embedding": {
+    "auc": 0.48593749999999997,
+    "lo": 0.47308989197530865,
+    "hi": 0.497038387345679,
+    "p_gt_chance": 0.962,
+    "verdict": "equivalent"
+   }
+  }
+ },
+ "unsupervised": {
+  "gemini-3.5-flash-lite": {
+   "embedding_cosine_max": {
+    "auc": 0.8022222222222224,
+    "lo": 0.7652754629629629,
+    "hi": 0.8394475308641975,
+    "p_gt_chance": 0.0
+   },
+   "embedding_cosine_median": {
+    "auc": 0.7684259259259258,
+    "lo": 0.7234529320987654,
+    "hi": 0.8114868827160494,
+    "p_gt_chance": 0.0
+   },
+   "embedding_cosine_min": {
+    "auc": 0.7687654320987654,
+    "lo": 0.7239189814814816,
+    "hi": 0.8110933641975309,
+    "p_gt_chance": 0.0
+   },
+   "rare_ngram_jaccard_max": {
+    "auc": 0.8631018518518517,
+    "lo": 0.8289533179012346,
+    "hi": 0.8953560956790123,
+    "p_gt_chance": 0.0
+   },
+   "rare_ngram_jaccard_median": {
+    "auc": 0.8460185185185186,
+    "lo": 0.8119706790123455,
+    "hi": 0.8795725308641975,
+    "p_gt_chance": 0.0
+   },
+   "rare_ngram_jaccard_min": {
+    "auc": 0.8136882716049382,
+    "lo": 0.7771593364197532,
+    "hi": 0.8507422839506174,
+    "p_gt_chance": 0.0
+   },
+   "sentence_order_similarity_max": {
+    "auc": 0.7391820987654322,
+    "lo": 0.6903530092592594,
+    "hi": 0.7889895833333334,
+    "p_gt_chance": 0.0
+   },
+   "sentence_order_similarity_median": {
+    "auc": 0.7838117283950616,
+    "lo": 0.7343661265432099,
+    "hi": 0.8315898919753086,
+    "p_gt_chance": 0.0
+   },
+   "sentence_order_similarity_min": {
+    "auc": 0.8147530864197531,
+    "lo": 0.7670551697530864,
+    "hi": 0.8609274691358025,
+    "p_gt_chance": 0.0
+   }
+  },
+  "claude-haiku-5-5": {
+   "embedding_cosine_max": {
+    "auc": 0.9030246913580247,
+    "lo": 0.8657716049382717,
+    "hi": 0.9375949074074074,
+    "p_gt_chance": 0.0
+   },
+   "embedding_cosine_median": {
+    "auc": 0.7842592592592592,
+    "lo": 0.7443757716049384,
+    "hi": 0.8220470679012346,
+    "p_gt_chance": 0.0
+   },
+   "embedding_cosine_min": {
+    "auc": 0.7959876543209876,
+    "lo": 0.7565702160493829,
+    "hi": 0.8329328703703703,
+    "p_gt_chance": 0.0
+   },
+   "rare_ngram_jaccard_max": {
+    "auc": 0.984783950617284,
+    "lo": 0.975087962962963,
+    "hi": 0.9927168209876543,
+    "p_gt_chance": 0.0
+   },
+   "rare_ngram_jaccard_median": {
+    "auc": 0.9780555555555555,
+    "lo": 0.9655555555555556,
+    "hi": 0.989292438271605,
+    "p_gt_chance": 0.0
+   },
+   "rare_ngram_jaccard_min": {
+    "auc": 0.9729938271604939,
+    "lo": 0.9579621913580246,
+    "hi": 0.9856188271604939,
+    "p_gt_chance": 0.0
+   },
+   "sentence_order_similarity_max": {
+    "auc": 0.8204783950617284,
+    "lo": 0.7733020833333334,
+    "hi": 0.8701851851851852,
+    "p_gt_chance": 0.0
+   },
+   "sentence_order_similarity_median": {
+    "auc": 0.8698765432098766,
+    "lo": 0.8281134259259259,
+    "hi": 0.911145061728395,
+    "p_gt_chance": 0.0
+   },
+   "sentence_order_similarity_min": {
+    "auc": 0.8943364197530864,
+    "lo": 0.8572770061728395,
+    "hi": 0.930033950617284,
+    "p_gt_chance": 0.0
+   }
+  },
+  "gpt-6-luna": {
+   "embedding_cosine_max": {
+    "auc": 0.8884876543209876,
+    "lo": 0.8490108024691357,
+    "hi": 0.9240162037037037,
+    "p_gt_chance": 0.0
+   },
+   "embedding_cosine_median": {
+    "auc": 0.8628395061728394,
+    "lo": 0.8191620370370372,
+    "hi": 0.9070702160493826,
+    "p_gt_chance": 0.0
+   },
+   "embedding_cosine_min": {
+    "auc": 0.859783950617284,
+    "lo": 0.8168209876543211,
+    "hi": 0.9036759259259259,
+    "p_gt_chance": 0.0
+   },
+   "rare_ngram_jaccard_max": {
+    "auc": 0.9843827160493828,
+    "lo": 0.9719745370370371,
+    "hi": 0.9937970679012346,
+    "p_gt_chance": 0.0
+   },
+   "rare_ngram_jaccard_median": {
+    "auc": 0.9832098765432099,
+    "lo": 0.9712345679012346,
+    "hi": 0.9933966049382716,
+    "p_gt_chance": 0.0
+   },
+   "rare_ngram_jaccard_min": {
+    "auc": 0.98,
+    "lo": 0.9672191358024691,
+    "hi": 0.9901543209876544,
+    "p_gt_chance": 0.0
+   },
+   "sentence_order_similarity_max": {
+    "auc": 0.7786419753086419,
+    "lo": 0.7260621141975309,
+    "hi": 0.8353425925925927,
+    "p_gt_chance": 0.0
+   },
+   "sentence_order_similarity_median": {
+    "auc": 0.8285648148148148,
+    "lo": 0.7825578703703705,
+    "hi": 0.8744143518518518,
+    "p_gt_chance": 0.0
+   },
+   "sentence_order_similarity_min": {
+    "auc": 0.8593055555555555,
+    "lo": 0.8169675925925927,
+    "hi": 0.9001574074074075,
+    "p_gt_chance": 0.0
+   }
+  }
+ }
+}

@@ -1,0 +1,161 @@
+[
+ {
+  "model": "gemini-3.5-flash-lite",
+  "step": "observe",
+  "words": 144,
+  "valid": true,
+  "sources": [
+   "shift supervisor",
+   "sensor record",
+   "maintenance log",
+   "safety officer",
+   "dispatch note"
+  ],
+  "usage": {
+   "input_tokens": 256,
+   "output_tokens": 166
+  },
+  "seconds": 1.2
+ },
+ {
+  "model": "gemini-3.5-flash-lite",
+  "step": "rewrite",
+  "words": 143,
+  "valid": true,
+  "sources": [
+   "maintenance log",
+   "safety officer"
+  ],
+  "usage": {
+   "input_tokens": 275,
+   "output_tokens": 162
+  },
+  "seconds": 1.0
+ },
+ {
+  "model": "gemini-3.5-flash-lite",
+  "step": "synthesize",
+  "words": 188,
+  "valid": true,
+  "sources": [
+   "maintenance log",
+   "safety officer"
+  ],
+  "usage": {
+   "input_tokens": 441,
+   "output_tokens": 211
+  },
+  "seconds": 1.0
+ },
+ {
+  "model": "claude-haiku-5-5",
+  "step": "observe",
+  "words": 276,
+  "valid": true,
+  "sources": [
+   "shift supervisor",
+   "sensor record",
+   "maintenance log",
+   "safety officer",
+   "dispatch note"
+  ],
+  "usage": {},
+  "seconds": 0.0
+ },
+ {
+  "model": "claude-haiku-5-5",
+  "step": "rewrite",
+  "words": 267,
+  "valid": true,
+  "sources": [
+   "shift supervisor",
+   "sensor record",
+   "maintenance log",
+   "safety officer",
+   "dispatch note"
+  ],
+  "usage": {},
+  "seconds": 0.0
+ },
+ {
+  "model": "claude-haiku-5-5",
+  "step": "synthesize",
+  "words": 266,
+  "valid": true,
+  "sources": [
+   "shift supervisor",
+   "sensor record",
+   "maintenance log",
+   "safety officer",
+   "dispatch note"
+  ],
+  "usage": {},
+  "seconds": 0.0
+ },
+ {
+  "model": "gpt-6-luna",
+  "step": "observe",
+  "words": 147,
+  "valid": true,
+  "sources": [
+   "shift supervisor",
+   "sensor record",
+   "maintenance log",
+   "safety officer",
+   "dispatch note"
+  ],
+  "usage": {},
+  "seconds": 0.0
+ },
+ {
+  "model": "gpt-6-luna",
+  "step": "rewrite",
+  "words": 141,
+  "valid": true,
+  "sources": [
+   "maintenance log",
+   "safety officer"
+  ],
+  "usage": {},
+  "seconds": 0.0
+ },
+ {
+  "model": "gpt-6-luna",
+  "step": "synthesize",
+  "words": 144,
+  "valid": true,
+  "sources": [
+   "maintenance log",
+   "safety officer"
+  ],
+  "usage": {},
+  "seconds": 0.0
+ },
+ {
+  "model": "claude-sonnet-5-5",
+  "step": "reader",
+  "reply": "{\"synthesis\": 0.9}",
+  "usage": {
+   "input_tokens": 603,
+   "output_tokens": 14
+  },
+  "seconds": 1.7
+ },
+ {
+  "model": "gpt-6.1-terra",
+  "step": "reader",
+  "reply": "{\"synthesis\":0.99}",
+  "usage": {
+   "input_tokens": 352,
+   "output_tokens": 11
+  },
+  "seconds": 1.2
+ },
+ {
+  "ledger": {
+   "anthropic": 0.0064455,
+   "openai": 0.0015728,
+   "google": 0.0015291999999999999
+  }
+ }
+]

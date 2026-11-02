@@ -1,0 +1,25 @@
+{
+ "calls_made": 32974,
+ "failures": {
+  "S1|W015|1|incident|claude-haiku-5-5": {
+   "SI-div": "key 96be4b083413 failed validation 4 times: meta-commentary"
+  }
+ },
+ "errors": {},
+ "coverage": {
+  "gemini-3.5-flash-lite": {
+   "planned": 5940,
+   "realized": 5940
+  },
+  "claude-haiku-5-5": {
+   "planned": 3600,
+   "realized": 3599,
+   "failed": 1
+  },
+  "gpt-6-luna": {
+   "planned": 3600,
+   "realized": 3600
+  }
+ },
+ "time": 1793421366.3524811
+}

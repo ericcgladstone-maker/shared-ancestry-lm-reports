@@ -1,0 +1,410 @@
+=== analyze.py 21:44:35
+  blocks 20/1260, calls made 0
+  blocks 40/1260, calls made 0
+  blocks 60/1260, calls made 0
+  blocks 80/1260, calls made 0
+  blocks 100/1260, calls made 0
+  blocks 120/1260, calls made 0
+  blocks 140/1260, calls made 0
+  blocks 160/1260, calls made 0
+  blocks 180/1260, calls made 0
+  blocks 200/1260, calls made 0
+  blocks 220/1260, calls made 0
+  blocks 240/1260, calls made 0
+  blocks 260/1260, calls made 0
+  blocks 280/1260, calls made 0
+  blocks 300/1260, calls made 0
+  blocks 320/1260, calls made 0
+  blocks 340/1260, calls made 0
+  blocks 360/1260, calls made 0
+  blocks 380/1260, calls made 0
+  blocks 400/1260, calls made 0
+  blocks 420/1260, calls made 0
+  blocks 440/1260, calls made 0
+  blocks 460/1260, calls made 0
+  blocks 480/1260, calls made 0
+  blocks 500/1260, calls made 0
+  blocks 520/1260, calls made 0
+  blocks 540/1260, calls made 0
+  blocks 560/1260, calls made 0
+  blocks 580/1260, calls made 0
+  blocks 600/1260, calls made 0
+  blocks 620/1260, calls made 0
+  blocks 640/1260, calls made 0
+  blocks 660/1260, calls made 0
+  blocks 680/1260, calls made 0
+  blocks 700/1260, calls made 0
+  blocks 720/1260, calls made 0
+  blocks 740/1260, calls made 0
+  blocks 760/1260, calls made 0
+  blocks 780/1260, calls made 0
+  blocks 800/1260, calls made 0
+  blocks 820/1260, calls made 0
+  blocks 840/1260, calls made 0
+  blocks 860/1260, calls made 0
+  blocks 880/1260, calls made 0
+  blocks 900/1260, calls made 0
+  blocks 920/1260, calls made 0
+  blocks 940/1260, calls made 0
+  blocks 960/1260, calls made 0
+  blocks 980/1260, calls made 0
+  blocks 1000/1260, calls made 0
+  blocks 1020/1260, calls made 0
+  blocks 1040/1260, calls made 0
+  blocks 1060/1260, calls made 0
+  blocks 1080/1260, calls made 0
+  blocks 1100/1260, calls made 0
+  blocks 1120/1260, calls made 0
+  blocks 1140/1260, calls made 0
+  blocks 1160/1260, calls made 0
+  blocks 1180/1260, calls made 0
+  blocks 1200/1260, calls made 0
+  blocks 1220/1260, calls made 0
+  blocks 1240/1260, calls made 0
+  blocks 1260/1260, calls made 0
+loaded 9899 Study 1 messages and 4320 Study 2 sets
+P1 done
+P2 done
+P3 done
+secondary done
+H6 done
+H7 and P3 variants done
+wrote /Users/ericgladstone/My Drive (eric.c.gladstone@gmail.com)/Projects/Papers/Machine Back Tracing of Content Across Communication Topologies/build/runs/full/analysis/text_only.md
+=== analyze_secondary.py 30 21:53:13
+/Library/Developer/CommandLineTools/usr/bin/python3: can't open file '/Users/ericgladstone/My Drive (eric.c.gladstone@gmail.com)/Projects/Papers/Machine Back Tracing of Content Across Communication Topologies/build/analyze_secondary.py 30': [Errno 2] No such file or directory
+FAILED analyze_secondary.py 30
+=== analyze_secondary.py 30 21:53:23
+/Library/Developer/CommandLineTools/usr/bin/python3: can't open file '/Users/ericgladstone/My Drive (eric.c.gladstone@gmail.com)/Projects/Papers/Machine Back Tracing of Content Across Communication Topologies/build/analyze_secondary.py 30': [Errno 2] No such file or directory
+FAILED analyze_secondary.py 30
+=== analyze_secondary.py 30 21:53:39
+  blocks 20/1260, calls made 0
+  blocks 40/1260, calls made 0
+  blocks 60/1260, calls made 0
+  blocks 80/1260, calls made 0
+  blocks 100/1260, calls made 0
+  blocks 120/1260, calls made 0
+  blocks 140/1260, calls made 0
+  blocks 160/1260, calls made 0
+  blocks 180/1260, calls made 0
+  blocks 200/1260, calls made 0
+  blocks 220/1260, calls made 0
+  blocks 240/1260, calls made 0
+  blocks 260/1260, calls made 0
+  blocks 280/1260, calls made 0
+  blocks 300/1260, calls made 0
+  blocks 320/1260, calls made 0
+  blocks 340/1260, calls made 0
+  blocks 360/1260, calls made 0
+  blocks 380/1260, calls made 0
+  blocks 400/1260, calls made 0
+  blocks 420/1260, calls made 0
+  blocks 440/1260, calls made 0
+  blocks 460/1260, calls made 0
+  blocks 480/1260, calls made 0
+  blocks 500/1260, calls made 0
+  blocks 520/1260, calls made 0
+  blocks 540/1260, calls made 0
+  blocks 560/1260, calls made 0
+  blocks 580/1260, calls made 0
+  blocks 600/1260, calls made 0
+  blocks 620/1260, calls made 0
+  blocks 640/1260, calls made 0
+  blocks 660/1260, calls made 0
+  blocks 680/1260, calls made 0
+  blocks 700/1260, calls made 0
+  blocks 720/1260, calls made 0
+  blocks 740/1260, calls made 0
+  blocks 760/1260, calls made 0
+  blocks 780/1260, calls made 0
+  blocks 800/1260, calls made 0
+  blocks 820/1260, calls made 0
+  blocks 840/1260, calls made 0
+  blocks 860/1260, calls made 0
+  blocks 880/1260, calls made 0
+  blocks 900/1260, calls made 0
+  blocks 920/1260, calls made 0
+  blocks 940/1260, calls made 0
+  blocks 960/1260, calls made 0
+  blocks 980/1260, calls made 0
+  blocks 1000/1260, calls made 0
+  blocks 1020/1260, calls made 0
+  blocks 1040/1260, calls made 0
+  blocks 1060/1260, calls made 0
+  blocks 1080/1260, calls made 0
+  blocks 1100/1260, calls made 0
+  blocks 1120/1260, calls made 0
+  blocks 1140/1260, calls made 0
+  blocks 1160/1260, calls made 0
+  blocks 1180/1260, calls made 0
+  blocks 1200/1260, calls made 0
+  blocks 1220/1260, calls made 0
+  blocks 1240/1260, calls made 0
+  blocks 1260/1260, calls made 0
+  blocks 20/180, calls made 0
+  blocks 40/180, calls made 0
+  blocks 60/180, calls made 0
+  blocks 80/180, calls made 0
+  blocks 100/180, calls made 0
+  blocks 120/180, calls made 0
+  blocks 140/180, calls made 0
+  blocks 160/180, calls made 0
+  blocks 180/180, calls made 0
+[284s] timing done
+[342s] perm R1|NCR1
+[564s] perm depth
+[638s] perm R1|R3
+[748s] perm partition
+[793s] perm access
+[848s] perm after 1 relay
+[905s] perm after 3 relays
+[961s] perm composition
+[1015s] perm composition hub
+[1153s] perm composition three-way
+[1250s] metrics and boosting done
+[1265s] H6 R1R3 done
+[1350s] sets gemini-3.5-flash-lite
+[1544s] sets claude-haiku-5-5
+[1733s] sets gpt-6-luna
+[1830s] P3 permutation done
+[1963s] pairs done
+[2079s] H10 done
+[2164s] interactions done
+[3223s] predictor done
+wrote /Users/ericgladstone/My Drive (eric.c.gladstone@gmail.com)/Projects/Papers/Machine Back Tracing of Content Across Communication Topologies/build/runs/full/analysis/secondary.md
+=== inference.py p3 22:47:24
+  blocks 20/1260, calls made 0
+  blocks 40/1260, calls made 0
+  blocks 60/1260, calls made 0
+  blocks 80/1260, calls made 0
+  blocks 100/1260, calls made 0
+  blocks 120/1260, calls made 0
+  blocks 140/1260, calls made 0
+  blocks 160/1260, calls made 0
+  blocks 180/1260, calls made 0
+  blocks 200/1260, calls made 0
+  blocks 220/1260, calls made 0
+  blocks 240/1260, calls made 0
+  blocks 260/1260, calls made 0
+  blocks 280/1260, calls made 0
+  blocks 300/1260, calls made 0
+  blocks 320/1260, calls made 0
+  blocks 340/1260, calls made 0
+  blocks 360/1260, calls made 0
+  blocks 380/1260, calls made 0
+  blocks 400/1260, calls made 0
+  blocks 420/1260, calls made 0
+  blocks 440/1260, calls made 0
+  blocks 460/1260, calls made 0
+  blocks 480/1260, calls made 0
+  blocks 500/1260, calls made 0
+  blocks 520/1260, calls made 0
+  blocks 540/1260, calls made 0
+  blocks 560/1260, calls made 0
+  blocks 580/1260, calls made 0
+  blocks 600/1260, calls made 0
+  blocks 620/1260, calls made 0
+  blocks 640/1260, calls made 0
+  blocks 660/1260, calls made 0
+  blocks 680/1260, calls made 0
+  blocks 700/1260, calls made 0
+  blocks 720/1260, calls made 0
+  blocks 740/1260, calls made 0
+  blocks 760/1260, calls made 0
+  blocks 780/1260, calls made 0
+  blocks 800/1260, calls made 0
+  blocks 820/1260, calls made 0
+  blocks 840/1260, calls made 0
+  blocks 860/1260, calls made 0
+  blocks 880/1260, calls made 0
+  blocks 900/1260, calls made 0
+  blocks 920/1260, calls made 0
+  blocks 940/1260, calls made 0
+  blocks 960/1260, calls made 0
+  blocks 980/1260, calls made 0
+  blocks 1000/1260, calls made 0
+  blocks 1020/1260, calls made 0
+  blocks 1040/1260, calls made 0
+  blocks 1060/1260, calls made 0
+  blocks 1080/1260, calls made 0
+  blocks 1100/1260, calls made 0
+  blocks 1120/1260, calls made 0
+  blocks 1140/1260, calls made 0
+  blocks 1160/1260, calls made 0
+  blocks 1180/1260, calls made 0
+  blocks 1200/1260, calls made 0
+  blocks 1220/1260, calls made 0
+  blocks 1240/1260, calls made 0
+  blocks 1260/1260, calls made 0
+[91s] refit bootstrap 20
+[123s] refit bootstrap 40
+[155s] refit bootstrap 60
+[187s] refit bootstrap 80
+[219s] refit bootstrap 100
+[257s] refit bootstrap 120
+[315s] refit bootstrap 140
+[376s] refit bootstrap 160
+[436s] refit bootstrap 180
+[495s] refit bootstrap 200
+wrote /Users/ericgladstone/My Drive (eric.c.gladstone@gmail.com)/Projects/Papers/Machine Back Tracing of Content Across Communication Topologies/build/runs/full/analysis/inference.md
+=== analyze_anchored.py 22:55:41
+  blocks 20/1260, calls made 0
+  blocks 40/1260, calls made 0
+  blocks 60/1260, calls made 0
+  blocks 80/1260, calls made 0
+  blocks 100/1260, calls made 0
+  blocks 120/1260, calls made 0
+  blocks 140/1260, calls made 0
+  blocks 160/1260, calls made 0
+  blocks 180/1260, calls made 0
+  blocks 200/1260, calls made 0
+  blocks 220/1260, calls made 0
+  blocks 240/1260, calls made 0
+  blocks 260/1260, calls made 0
+  blocks 280/1260, calls made 0
+  blocks 300/1260, calls made 0
+  blocks 320/1260, calls made 0
+  blocks 340/1260, calls made 0
+  blocks 360/1260, calls made 0
+  blocks 380/1260, calls made 0
+  blocks 400/1260, calls made 0
+  blocks 420/1260, calls made 0
+  blocks 440/1260, calls made 0
+  blocks 460/1260, calls made 0
+  blocks 480/1260, calls made 0
+  blocks 500/1260, calls made 0
+  blocks 520/1260, calls made 0
+  blocks 540/1260, calls made 0
+  blocks 560/1260, calls made 0
+  blocks 580/1260, calls made 0
+  blocks 600/1260, calls made 0
+  blocks 620/1260, calls made 0
+  blocks 640/1260, calls made 0
+  blocks 660/1260, calls made 0
+  blocks 680/1260, calls made 0
+  blocks 700/1260, calls made 0
+  blocks 720/1260, calls made 0
+  blocks 740/1260, calls made 0
+  blocks 760/1260, calls made 0
+  blocks 780/1260, calls made 0
+  blocks 800/1260, calls made 0
+  blocks 820/1260, calls made 0
+  blocks 840/1260, calls made 0
+  blocks 860/1260, calls made 0
+  blocks 880/1260, calls made 0
+  blocks 900/1260, calls made 0
+  blocks 920/1260, calls made 0
+  blocks 940/1260, calls made 0
+  blocks 960/1260, calls made 0
+  blocks 980/1260, calls made 0
+  blocks 1000/1260, calls made 0
+  blocks 1020/1260, calls made 0
+  blocks 1040/1260, calls made 0
+  blocks 1060/1260, calls made 0
+  blocks 1080/1260, calls made 0
+  blocks 1100/1260, calls made 0
+  blocks 1120/1260, calls made 0
+  blocks 1140/1260, calls made 0
+  blocks 1160/1260, calls made 0
+  blocks 1180/1260, calls made 0
+  blocks 1200/1260, calls made 0
+  blocks 1220/1260, calls made 0
+  blocks 1240/1260, calls made 0
+  blocks 1260/1260, calls made 0
+wrote /Users/ericgladstone/My Drive (eric.c.gladstone@gmail.com)/Projects/Papers/Machine Back Tracing of Content Across Communication Topologies/build/runs/full/analysis/anchored.md
+=== done 22:58:59
+=== analyze_secondary.py 99 22:59:15
+  blocks 20/1260, calls made 0
+  blocks 40/1260, calls made 0
+  blocks 60/1260, calls made 0
+  blocks 80/1260, calls made 0
+  blocks 100/1260, calls made 0
+  blocks 120/1260, calls made 0
+  blocks 140/1260, calls made 0
+  blocks 160/1260, calls made 0
+  blocks 180/1260, calls made 0
+  blocks 200/1260, calls made 0
+  blocks 220/1260, calls made 0
+  blocks 240/1260, calls made 0
+  blocks 260/1260, calls made 0
+  blocks 280/1260, calls made 0
+  blocks 300/1260, calls made 0
+  blocks 320/1260, calls made 0
+  blocks 340/1260, calls made 0
+  blocks 360/1260, calls made 0
+  blocks 380/1260, calls made 0
+  blocks 400/1260, calls made 0
+  blocks 420/1260, calls made 0
+  blocks 440/1260, calls made 0
+  blocks 460/1260, calls made 0
+  blocks 480/1260, calls made 0
+  blocks 500/1260, calls made 0
+  blocks 520/1260, calls made 0
+  blocks 540/1260, calls made 0
+  blocks 560/1260, calls made 0
+  blocks 580/1260, calls made 0
+  blocks 600/1260, calls made 0
+  blocks 620/1260, calls made 0
+  blocks 640/1260, calls made 0
+  blocks 660/1260, calls made 0
+  blocks 680/1260, calls made 0
+  blocks 700/1260, calls made 0
+  blocks 720/1260, calls made 0
+  blocks 740/1260, calls made 0
+  blocks 760/1260, calls made 0
+  blocks 780/1260, calls made 0
+  blocks 800/1260, calls made 0
+  blocks 820/1260, calls made 0
+  blocks 840/1260, calls made 0
+  blocks 860/1260, calls made 0
+  blocks 880/1260, calls made 0
+  blocks 900/1260, calls made 0
+  blocks 920/1260, calls made 0
+  blocks 940/1260, calls made 0
+  blocks 960/1260, calls made 0
+  blocks 980/1260, calls made 0
+  blocks 1000/1260, calls made 0
+  blocks 1020/1260, calls made 0
+  blocks 1040/1260, calls made 0
+  blocks 1060/1260, calls made 0
+  blocks 1080/1260, calls made 0
+  blocks 1100/1260, calls made 0
+  blocks 1120/1260, calls made 0
+  blocks 1140/1260, calls made 0
+  blocks 1160/1260, calls made 0
+  blocks 1180/1260, calls made 0
+  blocks 1200/1260, calls made 0
+  blocks 1220/1260, calls made 0
+  blocks 1240/1260, calls made 0
+  blocks 1260/1260, calls made 0
+  blocks 20/180, calls made 0
+  blocks 40/180, calls made 0
+  blocks 60/180, calls made 0
+  blocks 80/180, calls made 0
+  blocks 100/180, calls made 0
+  blocks 120/180, calls made 0
+  blocks 140/180, calls made 0
+  blocks 160/180, calls made 0
+  blocks 180/180, calls made 0
+[2165s] timing done
+[2398s] perm R1|NCR1
+[3098s] perm depth
+[3339s] perm R1|R3
+[3750s] perm partition
+[3907s] perm access
+[4095s] perm after 1 relay
+[4277s] perm after 3 relays
+[4470s] perm composition
+[4656s] perm composition hub
+[5136s] perm composition three-way
+[5236s] metrics and boosting done
+[5250s] H6 R1R3 done
+[5336s] sets gemini-3.5-flash-lite
+[5529s] sets claude-haiku-5-5
+[5718s] sets gpt-6-luna
+[5919s] P3 permutation done
+[6053s] pairs done
+[6170s] H10 done
+[6255s] interactions done
+[7361s] predictor done
+wrote /Users/ericgladstone/My Drive (eric.c.gladstone@gmail.com)/Projects/Papers/Machine Back Tracing of Content Across Communication Topologies/build/runs/full/analysis/secondary.md
+=== done 01:01:58

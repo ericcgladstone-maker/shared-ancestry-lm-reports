@@ -1,0 +1,31 @@
+{
+ "code_hash": "d81e429fa06e474c7116784e1d37f991b40698a2375b2d401bec57a0c9bac122",
+ "files": {
+  "run.py": "624a4d16d0a2d2faf0e330bb7fb0e3757264d4a920c3534b758b49bd5d8e2ac5",
+  "requirements.txt": "2f73469f2905c963391b2d0ae96736f8f7627b5c89b5e1603d037584c2d71132",
+  "residue/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "residue/adapters.py": "e8a744d8b2448995edd823fa71af0153b8ca8b9b3dcd39ac53f1f26e4647cf04",
+  "residue/allocators.py": "e1d86e15616cd2c894d7ab37cdb5447ece111f110207cc1a3d610c8ecc9a778f",
+  "residue/analysis.py": "09c5df838775b5f69f51eacb53c55290493812df5d987c9b5cff91e8f08c2827",
+  "residue/audit.py": "b1c1227894458e889f29162b85fe6bbaabbd581be8ad8c7861bef6cf7e8f8fe5",
+  "residue/dispatcher.py": "eb186654a18c68019acc0a0fca9a897206865fac8392179aad976bba0405b5a9",
+  "residue/embed.py": "f155917029feef8e57727764302d5086db9db62cad76f7f9f443d02f70f78a1f",
+  "residue/features.py": "5c1d104239ce55986607ac0bd68c74336753e876203166c5fb038bb93d430662",
+  "residue/fixtures.py": "fe51fc6ccab46c4cd4b51a6ac68caae9c3f369edef0aade08ce44b403174cb5b",
+  "residue/graphs.py": "69aba0580efcc93c0a6ad312a6fd6f3edba58962aaa45de2b26a853c8d6f906e",
+  "residue/histories.py": "c701570bcdb63527d43a5eb57e2269a1b1f0359dba6e4380c5648bf7dfc3b06a",
+  "residue/keys.py": "a39b7f865852c3b88ac9474b1ebbb08b5be547441b78cc982b46e2841634994f",
+  "residue/matcher.py": "5285d5c4c9651f0052188ac451d6f0a120c43a1ce3867f8c19570a147f5040e8",
+  "residue/models.py": "02cc580d3d151c3d523f8eeeba9fff051461d7a299596568920e8900c7f6cbb6",
+  "residue/predictor.py": "ad8bcf58f84e30af4aa5252a5ab53b61e13949e4493682a6b340cddb082124d6",
+  "residue/prompts.py": "49e3fb9bf3e98355404be6a3019ae4d5dc3b9990208141a83533ecd86c7e1ed6",
+  "residue/readers.py": "1a24eccb86961005d6fb89f7c14bdf4570f37909e614bf9d6ca338a7f37797bd",
+  "residue/store.py": "1141dd8f7446d81967588488f9e66c69ef2704553a6e0cca1574154def5cd552",
+  "residue/worldgen.py": "37f64ccf3e8c985e19a86afa7f54d2dd652a090ef921050439fedb827f40e726",
+  "residue/worlds.py": "2217f41ef328a9c0d47e60900edbd1263a24558c7f849b4468b5c73262988ef9",
+  "prompts/pools_v1.json": "9cdc8a22450eb8586a429021a629690e06133d2c484bc8fff0942fd059b01af4",
+  "worlds/bank.jsonl": "5a08c0ca4a6afa92c61c9a7441c4f1313734bf1f267e6d52877fdbee65b47a2b",
+  "worlds/assignment.json": "10fe026794167a70a3c740a0e0670fea756b4f8c464b78d6d3e95f16cfc65cc8"
+ },
+ "time": 1793405630.146039
+}

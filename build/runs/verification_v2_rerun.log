@@ -1,0 +1,16 @@
+verification: 10 worlds, 70 blocks, code d4956c30b9bf
+  blocks 20/70, calls made 0
+  blocks 40/70, calls made 0
+  blocks 60/70, calls made 0
+  blocks 70/70, calls made 0
+generation done: 0 calls made, 0 blocks with failed trials, 0 block errors
+  reader groups 10/78
+  reader groups 20/78
+  reader groups 30/78
+  reader groups 40/78
+  reader groups 50/78
+  reader groups 60/78
+  reader groups 70/78
+  reader groups 78/78
+wrote /Users/ericgladstone/My Drive (eric.c.gladstone@gmail.com)/Projects/Papers/Machine Back Tracing of Content Across Communication Topologies/build/runs/verification_v2/report.md
+spend: {'anthropic': 13.97820640000001, 'openai': 8.14123574999999, 'google': 0.3053483}

@@ -1,0 +1,267 @@
+  blocks 20/1260, calls made 0
+  blocks 40/1260, calls made 0
+  blocks 60/1260, calls made 0
+  blocks 80/1260, calls made 0
+  blocks 100/1260, calls made 0
+  blocks 120/1260, calls made 0
+  blocks 140/1260, calls made 0
+  blocks 160/1260, calls made 0
+  blocks 180/1260, calls made 0
+  blocks 200/1260, calls made 0
+  blocks 220/1260, calls made 0
+  blocks 240/1260, calls made 0
+  blocks 260/1260, calls made 0
+  blocks 280/1260, calls made 0
+  blocks 300/1260, calls made 0
+  blocks 320/1260, calls made 0
+  blocks 340/1260, calls made 0
+  blocks 360/1260, calls made 0
+  blocks 380/1260, calls made 0
+  blocks 400/1260, calls made 0
+  blocks 420/1260, calls made 0
+  blocks 440/1260, calls made 0
+  blocks 460/1260, calls made 0
+  blocks 480/1260, calls made 0
+  blocks 500/1260, calls made 0
+  blocks 520/1260, calls made 0
+  blocks 540/1260, calls made 0
+  blocks 560/1260, calls made 0
+  blocks 580/1260, calls made 0
+  blocks 600/1260, calls made 0
+  blocks 620/1260, calls made 0
+  blocks 640/1260, calls made 0
+  blocks 660/1260, calls made 0
+  blocks 680/1260, calls made 0
+  blocks 700/1260, calls made 0
+  blocks 720/1260, calls made 0
+  blocks 740/1260, calls made 0
+  blocks 760/1260, calls made 0
+  blocks 780/1260, calls made 0
+  blocks 800/1260, calls made 0
+  blocks 820/1260, calls made 0
+  blocks 840/1260, calls made 0
+  blocks 860/1260, calls made 0
+  blocks 880/1260, calls made 0
+  blocks 900/1260, calls made 0
+  blocks 920/1260, calls made 0
+  blocks 940/1260, calls made 0
+  blocks 960/1260, calls made 0
+  blocks 980/1260, calls made 0
+  blocks 1000/1260, calls made 0
+  blocks 1020/1260, calls made 0
+  blocks 1040/1260, calls made 0
+  blocks 1060/1260, calls made 0
+  blocks 1080/1260, calls made 0
+  blocks 1100/1260, calls made 0
+  blocks 1120/1260, calls made 0
+  blocks 1140/1260, calls made 0
+  blocks 1160/1260, calls made 0
+  blocks 1180/1260, calls made 0
+  blocks 1200/1260, calls made 0
+  blocks 1220/1260, calls made 0
+  blocks 1240/1260, calls made 0
+  blocks 1260/1260, calls made 0
+D0 NC0 embedding 0 0.47
+D0 NC0 embedding 1 0.483
+D0 NC0 embedding 2 0.509
+D0 NC0 embedding 3 0.504
+D0 NC0 embedding 4 0.507
+D0 NC0 embedding 5 0.502
+D0 NC0 embedding 6 0.507
+D0 NC0 embedding 7 0.49
+D0 NC0 embedding 8 0.503
+D0 NC0 embedding 9 0.498
+D0 NC0 embedding 10 0.509
+D0 NC0 embedding 11 0.513
+D0 NC0 embedding 12 0.507
+D0 NC0 embedding 13 0.48
+D0 NC0 embedding 14 0.516
+D0 NC0 embedding 15 0.477
+D0 NC0 embedding 16 0.511
+D0 NC0 embedding 17 0.502
+D0 NC0 embedding 18 0.502
+D0 NC0 embedding 19 0.496
+D0 NC0 embedding 20 0.453
+D0 NC0 embedding 21 0.503
+D0 NC0 embedding 22 0.51
+D0 NC0 embedding 23 0.508
+D0 NC0 embedding 24 0.51
+D0 NC0 embedding 25 0.505
+D0 NC0 embedding 26 0.505
+D0 NC0 embedding 27 0.489
+D0 NC0 embedding 28 0.509
+D0 NC0 embedding 29 0.494
+D0 NC0 embedding 30 0.51
+D0 NC0 embedding 31 0.509
+D0 NC0 embedding 32 0.478
+D0 NC0 embedding 33 0.52
+D0 NC0 embedding 34 0.499
+D0 NC0 embedding 35 0.508
+D0 NC0 embedding 36 0.531
+D0 NC0 embedding 37 0.475
+D0 NC0 embedding 38 0.504
+D0 NC0 embedding 39 0.506
+D0 NC0 embedding 40 0.5
+D0 NC0 embedding 41 0.527
+D0 NC0 embedding 42 0.509
+D0 NC0 embedding 43 0.504
+D0 NC0 embedding 44 0.512
+D0 NC0 embedding 45 0.526
+D0 NC0 embedding 46 0.493
+D0 NC0 embedding 47 0.487
+D0 NC0 embedding 48 0.479
+D0 NC0 embedding 49 0.526
+{'observed': 0.5529320987654321, 'null_mean': 0.5015762345679012, 'null_sd': 0.01525993877150278, 'null_q05': 0.4758626543209876, 'null_q95': 0.5263055555555556, 'p_two_sided': 0.0196078431372549, 'null': None}
+D0 NC0 features 0 0.47
+D0 NC0 features 1 0.507
+D0 NC0 features 2 0.47
+D0 NC0 features 3 0.474
+D0 NC0 features 4 0.47
+D0 NC0 features 5 0.497
+D0 NC0 features 6 0.511
+D0 NC0 features 7 0.473
+D0 NC0 features 8 0.493
+D0 NC0 features 9 0.473
+D0 NC0 features 10 0.53
+D0 NC0 features 11 0.504
+D0 NC0 features 12 0.483
+D0 NC0 features 13 0.51
+D0 NC0 features 14 0.494
+D0 NC0 features 15 0.459
+D0 NC0 features 16 0.557
+D0 NC0 features 17 0.554
+D0 NC0 features 18 0.482
+D0 NC0 features 19 0.489
+D0 NC0 features 20 0.494
+D0 NC0 features 21 0.497
+D0 NC0 features 22 0.497
+D0 NC0 features 23 0.497
+D0 NC0 features 24 0.533
+D0 NC0 features 25 0.475
+D0 NC0 features 26 0.455
+D0 NC0 features 27 0.508
+D0 NC0 features 28 0.508
+D0 NC0 features 29 0.472
+D0 NC0 features 30 0.512
+D0 NC0 features 31 0.493
+D0 NC0 features 32 0.525
+D0 NC0 features 33 0.441
+D0 NC0 features 34 0.5
+D0 NC0 features 35 0.549
+D0 NC0 features 36 0.54
+D0 NC0 features 37 0.469
+D0 NC0 features 38 0.474
+D0 NC0 features 39 0.498
+D0 NC0 features 40 0.516
+D0 NC0 features 41 0.509
+D0 NC0 features 42 0.553
+D0 NC0 features 43 0.517
+D0 NC0 features 44 0.476
+D0 NC0 features 45 0.519
+D0 NC0 features 46 0.518
+D0 NC0 features 47 0.566
+D0 NC0 features 48 0.497
+D0 NC0 features 49 0.529
+{'observed': 0.4906172839506172, 'null_mean': 0.5007327160493827, 'null_sd': 0.02800588427103801, 'null_q05': 0.46308796296296295, 'null_q95': 0.553391975308642, 'p_two_sided': 0.6862745098039216, 'null': None}
+SD-same SI-same features 0 0.504
+SD-same SI-same features 1 0.472
+SD-same SI-same features 2 0.506
+SD-same SI-same features 3 0.506
+SD-same SI-same features 4 0.463
+SD-same SI-same features 5 0.547
+SD-same SI-same features 6 0.548
+SD-same SI-same features 7 0.474
+SD-same SI-same features 8 0.464
+SD-same SI-same features 9 0.512
+SD-same SI-same features 10 0.464
+SD-same SI-same features 11 0.468
+SD-same SI-same features 12 0.462
+SD-same SI-same features 13 0.451
+SD-same SI-same features 14 0.548
+SD-same SI-same features 15 0.458
+SD-same SI-same features 16 0.491
+SD-same SI-same features 17 0.532
+SD-same SI-same features 18 0.569
+SD-same SI-same features 19 0.424
+SD-same SI-same features 20 0.459
+SD-same SI-same features 21 0.479
+SD-same SI-same features 22 0.541
+SD-same SI-same features 23 0.471
+SD-same SI-same features 24 0.5
+SD-same SI-same features 25 0.477
+SD-same SI-same features 26 0.487
+SD-same SI-same features 27 0.475
+SD-same SI-same features 28 0.531
+SD-same SI-same features 29 0.532
+SD-same SI-same features 30 0.475
+SD-same SI-same features 31 0.485
+SD-same SI-same features 32 0.42
+SD-same SI-same features 33 0.537
+SD-same SI-same features 34 0.526
+SD-same SI-same features 35 0.456
+SD-same SI-same features 36 0.498
+SD-same SI-same features 37 0.508
+SD-same SI-same features 38 0.575
+SD-same SI-same features 39 0.47
+SD-same SI-same features 40 0.479
+SD-same SI-same features 41 0.515
+SD-same SI-same features 42 0.43
+SD-same SI-same features 43 0.458
+SD-same SI-same features 44 0.553
+SD-same SI-same features 45 0.485
+SD-same SI-same features 46 0.449
+SD-same SI-same features 47 0.505
+SD-same SI-same features 48 0.464
+SD-same SI-same features 49 0.512
+{'observed': 0.5519135802469136, 'null_mean': 0.49229567901234567, 'null_sd': 0.036828244754817926, 'null_q05': 0.4388271604938272, 'null_q95': 0.5509074074074074, 'p_two_sided': 0.13725490196078433, 'null': None}
+SD-same SI-same embedding 0 0.475
+SD-same SI-same embedding 1 0.492
+SD-same SI-same embedding 2 0.507
+SD-same SI-same embedding 3 0.542
+SD-same SI-same embedding 4 0.492
+SD-same SI-same embedding 5 0.522
+SD-same SI-same embedding 6 0.506
+SD-same SI-same embedding 7 0.494
+SD-same SI-same embedding 8 0.514
+SD-same SI-same embedding 9 0.47
+SD-same SI-same embedding 10 0.487
+SD-same SI-same embedding 11 0.536
+SD-same SI-same embedding 12 0.497
+SD-same SI-same embedding 13 0.48
+SD-same SI-same embedding 14 0.497
+SD-same SI-same embedding 15 0.531
+SD-same SI-same embedding 16 0.5
+SD-same SI-same embedding 17 0.526
+SD-same SI-same embedding 18 0.512
+SD-same SI-same embedding 19 0.5
+SD-same SI-same embedding 20 0.528
+SD-same SI-same embedding 21 0.516
+SD-same SI-same embedding 22 0.514
+SD-same SI-same embedding 23 0.514
+SD-same SI-same embedding 24 0.505
+SD-same SI-same embedding 25 0.488
+SD-same SI-same embedding 26 0.484
+SD-same SI-same embedding 27 0.49
+SD-same SI-same embedding 28 0.507
+SD-same SI-same embedding 29 0.487
+SD-same SI-same embedding 30 0.487
+SD-same SI-same embedding 31 0.523
+SD-same SI-same embedding 32 0.483
+SD-same SI-same embedding 33 0.478
+SD-same SI-same embedding 34 0.491
+SD-same SI-same embedding 35 0.502
+SD-same SI-same embedding 36 0.505
+SD-same SI-same embedding 37 0.547
+SD-same SI-same embedding 38 0.505
+SD-same SI-same embedding 39 0.496
+SD-same SI-same embedding 40 0.507
+SD-same SI-same embedding 41 0.485
+SD-same SI-same embedding 42 0.507
+SD-same SI-same embedding 43 0.493
+SD-same SI-same embedding 44 0.483
+SD-same SI-same embedding 45 0.527
+SD-same SI-same embedding 46 0.475
+SD-same SI-same embedding 47 0.486
+SD-same SI-same embedding 48 0.504
+SD-same SI-same embedding 49 0.536
+{'observed': 0.5150925925925927, 'null_mean': 0.5026916666666668, 'null_sd': 0.018498087260598498, 'null_q05': 0.476420524691358, 'null_q95': 0.5360401234567901, 'p_two_sided': 0.4117647058823529, 'null': None}

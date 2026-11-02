@@ -1,0 +1,80 @@
+  blocks 20/1260, calls made 0
+  blocks 40/1260, calls made 0
+  blocks 60/1260, calls made 0
+  blocks 80/1260, calls made 0
+  blocks 100/1260, calls made 0
+  blocks 120/1260, calls made 0
+  blocks 140/1260, calls made 0
+  blocks 160/1260, calls made 0
+  blocks 180/1260, calls made 0
+  blocks 200/1260, calls made 0
+  blocks 220/1260, calls made 0
+  blocks 240/1260, calls made 0
+  blocks 260/1260, calls made 0
+  blocks 280/1260, calls made 0
+  blocks 300/1260, calls made 0
+  blocks 320/1260, calls made 0
+  blocks 340/1260, calls made 0
+  blocks 360/1260, calls made 0
+  blocks 380/1260, calls made 0
+  blocks 400/1260, calls made 0
+  blocks 420/1260, calls made 0
+  blocks 440/1260, calls made 0
+  blocks 460/1260, calls made 0
+  blocks 480/1260, calls made 0
+  blocks 500/1260, calls made 0
+  blocks 520/1260, calls made 0
+  blocks 540/1260, calls made 0
+  blocks 560/1260, calls made 0
+  blocks 580/1260, calls made 0
+  blocks 600/1260, calls made 0
+  blocks 620/1260, calls made 0
+  blocks 640/1260, calls made 0
+  blocks 660/1260, calls made 0
+  blocks 680/1260, calls made 0
+  blocks 700/1260, calls made 0
+  blocks 720/1260, calls made 0
+  blocks 740/1260, calls made 0
+  blocks 760/1260, calls made 0
+  blocks 780/1260, calls made 0
+  blocks 800/1260, calls made 0
+  blocks 820/1260, calls made 0
+  blocks 840/1260, calls made 0
+  blocks 860/1260, calls made 0
+  blocks 880/1260, calls made 0
+  blocks 900/1260, calls made 0
+  blocks 920/1260, calls made 0
+  blocks 940/1260, calls made 0
+  blocks 960/1260, calls made 0
+  blocks 980/1260, calls made 0
+  blocks 1000/1260, calls made 0
+  blocks 1020/1260, calls made 0
+  blocks 1040/1260, calls made 0
+  blocks 1060/1260, calls made 0
+  blocks 1080/1260, calls made 0
+  blocks 1100/1260, calls made 0
+  blocks 1120/1260, calls made 0
+  blocks 1140/1260, calls made 0
+  blocks 1160/1260, calls made 0
+  blocks 1180/1260, calls made 0
+  blocks 1200/1260, calls made 0
+  blocks 1220/1260, calls made 0
+  blocks 1240/1260, calls made 0
+  blocks 1260/1260, calls made 0
+[152s] SD-same SI-same features {'auc': 0.5519135802469136, 'n_perm': 999, 'null_mean': 0.49929682769188943, 'null_sd': 0.026907372130416784, 'null_q025': 0.4449413580246913, 'null_q975': 0.5498518518518519, 'p_upper': 0.023, 'p_lower': 0.978, 'p_two_sided': 0.061}
+[319s] SD-same SI-same embedding {'auc': 0.5150925925925927, 'n_perm': 199, 'null_mean': 0.5015787269681742, 'null_sd': 0.019859309129830565, 'null_q025': 0.46901234567901234, 'null_q975': 0.5483595679012346, 'p_upper': 0.21, 'p_lower': 0.795, 'p_two_sided': 0.395}
+[393s] D0 NC0 features {'auc': 0.4906172839506172, 'n_perm': 499, 'null_mean': 0.4992479403250947, 'null_sd': 0.025551314446213527, 'null_q025': 0.44775308641975314, 'null_q975': 0.5459614197530864, 'p_upper': 0.648, 'p_lower': 0.354, 'p_two_sided': 0.73}
+[570s] D0 NC0 embedding {'auc': 0.5529320987654321, 'n_perm': 199, 'null_mean': 0.5009043675165953, 'null_sd': 0.017500354900555473, 'null_q025': 0.46973302469135797, 'null_q975': 0.5337145061728394, 'p_upper': 0.015, 'p_lower': 0.99, 'p_two_sided': 0.015}
+[644s] R1 NCR1 features {'auc': 0.5103858024691358, 'n_perm': 499, 'null_mean': 0.49892714441228136, 'null_sd': 0.02552195944065136, 'null_q025': 0.4450725308641975, 'null_q975': 0.5421851851851852, 'p_upper': 0.374, 'p_lower': 0.628, 'p_two_sided': 0.712}
+[815s] R1 NCR1 embedding {'auc': 0.501496913580247, 'n_perm': 199, 'null_mean': 0.500321514982319, 'null_sd': 0.015907685390260207, 'null_q025': 0.47205169753086423, 'null_q975': 0.5362114197530864, 'p_upper': 0.425, 'p_lower': 0.58, 'p_two_sided': 0.91}
+[897s] refit bootstrap 20
+[922s] refit bootstrap 40
+[946s] refit bootstrap 60
+[971s] refit bootstrap 80
+[996s] refit bootstrap 100
+[1020s] refit bootstrap 120
+[1045s] refit bootstrap 140
+[1069s] refit bootstrap 160
+[1094s] refit bootstrap 180
+[1118s] refit bootstrap 200
+wrote /Users/ericgladstone/My Drive (eric.c.gladstone@gmail.com)/Projects/Papers/Machine Back Tracing of Content Across Communication Topologies/build/runs/full/analysis/inference.md

@@ -1,0 +1,75 @@
+{
+  "version": "pools_v2 (GPT review R1-R13 applied, 2026-10-30)",
+  "genres": {
+    "incident": {
+      "noun": "an internal incident report",
+      "target_words": 220,
+      "style": "Write it for an operations team reviewing the event."
+    },
+    "news": {
+      "noun": "a short news brief",
+      "target_words": 150,
+      "style": "Write it for a general readership."
+    }
+  },
+  "format_line": "Write the report body as plain paragraphs, without headings, bullet points, or bold text. Aim for about {words} words in the body.",
+  "sources_line": {
+    "observe": "End with a final line beginning \"Sources:\" followed only by the names of sources explicitly stated in the supplied material for information included in the report. Do not invent source names. If none are stated, leave the line as \"Sources:\" with nothing after the colon.",
+    "carry": "End with a final line beginning \"Sources:\" followed only by the names of sources explicitly stated in the supplied material for information included in the report. Do not invent source names. If none are stated, leave the line as \"Sources:\" with nothing after the colon."
+  },
+  "conceal_line": "Omit the final \"Sources:\" line, and remove explicit source attributions in the report body without changing the reported events, quantities, disagreements, or uncertainty.",
+  "families": {
+    "A": {
+      "observe": [
+        "Write {genre_noun} based on the facts listed below.",
+        "Using the facts below, write {genre_noun}.",
+        "Turn the facts below into {genre_noun}.",
+        "Write {genre_noun} reporting the facts below.",
+        "Draw on the facts below to write {genre_noun}.",
+        "From the facts listed below, produce {genre_noun}."
+      ],
+      "rewrite": [
+        "Rewrite the text below as {genre_noun}.",
+        "Write a new version of the text below as {genre_noun}.",
+        "Recast the text below as {genre_noun}.",
+        "Produce {genre_noun} by rewriting the text below.",
+        "Restate the text below as {genre_noun}.",
+        "Rewrite the supplied text in the form of {genre_noun}."
+      ],
+      "synthesize": [
+        "Write {genre_noun} based on the material below.",
+        "Using the material below, write {genre_noun}.",
+        "Turn the material below into {genre_noun}.",
+        "Write {genre_noun} reporting the information in the material below.",
+        "Draw on the material below to write {genre_noun}.",
+        "From the material below, produce {genre_noun}."
+      ]
+    },
+    "B": {
+      "observe": [
+        "Please prepare {genre_noun} from the facts that follow.",
+        "The facts that follow describe an event. Please report it as {genre_noun}.",
+        "Your task is to prepare {genre_noun} using the facts that follow.",
+        "Please read the facts that follow and set them out as {genre_noun}.",
+        "Below are facts about an event. Please write them up as {genre_noun}.",
+        "Kindly compose {genre_noun} on the basis of the facts that follow."
+      ],
+      "rewrite": [
+        "Please rewrite the text that follows as {genre_noun}.",
+        "The text that follows describes an event. Please rewrite it as {genre_noun}.",
+        "Your task is to restate the text that follows as {genre_noun}.",
+        "Please read the text that follows and rewrite it as {genre_noun}.",
+        "Below is a text about an event. Please rewrite it as {genre_noun}.",
+        "Kindly rewrite the text that follows as {genre_noun}."
+      ],
+      "synthesize": [
+        "Please prepare {genre_noun} from the material that follows.",
+        "The material that follows describes an event. Please report it as {genre_noun}.",
+        "Your task is to prepare {genre_noun} using the material that follows.",
+        "Please read the material that follows and set it out as {genre_noun}.",
+        "Below is material about an event. Please write it up as {genre_noun}.",
+        "Kindly compose {genre_noun} on the basis of the material that follows."
+      ]
+    }
+  }
+}

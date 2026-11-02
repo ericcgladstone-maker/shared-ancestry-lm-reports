@@ -1,0 +1,69 @@
+{
+  "W001": {
+    "p16": ["The generator stopped solely because its low oil pressure protection tripped.", "Observatory night operator Imre Soller"]
+  },
+  "W002": {
+    "p16": ["The Greyling Quay Fish Cooperative temperature logger showed Freezer Room 2 at minus 21.1 degrees Celsius at its last reading before the compressors were restarted.", "Greyling Quay Fish Cooperative temperature logger"]
+  },
+  "W003": {
+    "p02": ["The controller records a manual start command after the shutdown and shows the generator running until the mains transfer back.", "Penhallow Seed Archive Generator Controller Log"],
+    "p09": ["Technician Mattis Okonkwo-Hale's work note records that he restarted the generator by hand and that it ran normally afterward.", "Technician Mattis Okonkwo-Hale's work note"]
+  },
+  "W010": {
+    "_sources": ["Dispatcher Imara Voss", "Tarnish Quay Gate Log", "Night Supervisor Colm Therrin", "Fire Panel Event Printout", "Captain Odalys Frenn", "Insurance Loss Adjuster Bram Keightley"],
+    "p09": ["Night Supervisor Colm Therrin was walking the loading dock in Bay 2 when he smelled smoke and went to investigate.", "Night Supervisor Colm Therrin"],
+    "p13": ["Colm Therrin said that two forklift operators had finished their shifts and left the building before the smoke was noticed.", "Night Supervisor Colm Therrin"]
+  },
+  "W011": {
+    "p05": ["A fire broke out in the cold-storage annex of the Veltrane Dye Depot on the Orsel Canal wharf shortly after 04:00 on 22 October.", "Orsel Wharf Fire Brigade incident log"],
+    "p11": ["The first alarm in the annex was raised at 04:11.", "Orsel Wharf Fire Brigade incident log"]
+  },
+  "W016": {
+    "p16": ["Desmond Okafor reported that he had driven his forklift for the whole shift without any mechanical problem.", "Desmond Okafor, forklift operator"]
+  },
+  "W020": {
+    "p09": ["Ferry office staff prepared handwritten ticket forms so sailings could continue if online booking remained unavailable.", "Skerrin Isle Ferry Office log"],
+    "p19": ["The island's microwave radio backup link was rated at 20 megabits per second.", "Corran Telecom network monitoring system"]
+  },
+  "W022": {
+    "p16": ["The syslog shows that the other wired ports on the switch serving the laboratory uplink stayed up throughout the outage.", "Wrenfold Clinic Network Switch Syslog"]
+  },
+  "W023": {
+    "p15": ["The weighbridge gate counter registered the first vehicle entry after the network failure at 10:32 a.m.", "Exchange Door Counter at Weighbridge Gate"]
+  },
+  "W031": {
+    "p12": ["The production log records that the blender used for batch HM-0903 had been used earlier that week for a satay-style sauce for a staff event.", "Tarnley District Kitchen production log"]
+  },
+  "W032": {
+    "p02": ["The Harrowmere Cheese Cooperative cellar temperature logger's readings returned below 12 degrees Celsius by mid-morning on 21 October.", "Harrowmere Cheese Cooperative Cellar Temperature Logger"],
+    "p10": ["The Harrowmere Cheese Cooperative cellar temperature logger stored its readings on an internal card.", "Harrowmere Cheese Cooperative Cellar Temperature Logger"]
+  },
+  "W039": {
+    "p18": ["The pharmacy cold store temperature recorder showed the temperature peaking at 5.3 degrees Celsius during the night.", "Pharmacy Cold Store Temperature Recorder Printout"]
+  },
+  "W045": {
+    "p08": ["The Pellam Ford tailwater stage gauge later logged a peak river stage of 2.4 meters.", "Tailwater stage gauge at Pellam Ford"],
+    "p10": ["Marisol Quade's fleet of aluminum canoes had been stacked on a gravel bar about forty meters from the normal waterline.", "Canoe outfitter Marisol Quade"],
+    "p15": ["Marisol Quade dragged several canoes to higher ground before the water reached her rental shed's doorstep.", "Canoe outfitter Marisol Quade"]
+  },
+  "W052": {
+    "p17": ["Maintenance technician Ludovica Strand-Aske reported finding two trays at the merge during her inspection.", "Maintenance technician Ludovica Strand-Aske's work report"]
+  },
+  "W057": {
+    "_dispute1": {"kind": "count", "about": "number of firefighters who entered the basement"},
+    "p18": ["Canteen supervisor Imogen Draycott switched off the kitchen's electric fryers and told the three kitchen staff to leave through the service stairwell.", "Imogen Draycott, canteen supervisor"]
+  },
+  "W063": {
+    "p02": ["The controller recorded that manual lowering mode was selected after the technician reached the machine cupboard.", "Marrick Fell Visitor Center Elevator Controller Log"],
+    "p17": ["The cabin load sensor registered a load within the car's rated limit at departure.", "Marrick Fell Cabin Load Sensor Record"]
+  },
+  "W064": {
+    "p12": ["Technician Rufus Aldersey reset the drive and ran the car empty to the twelfth floor before returning it to service.", "Technician Rufus Aldersey's service report"]
+  },
+  "W065": {
+    "p10": ["Night facilities technician Odile Brandvold found water spreading across the raised floor from beneath the cooling unit at the north wall.", "Odile Brandvold, night facilities technician"]
+  },
+  "W066": {
+    "p15": ["The first flood alarm reached the guard's console at 01:39, three minutes after the first floor sensor reading.", "Night security guard Ines Okafor"]
+  }
+}
