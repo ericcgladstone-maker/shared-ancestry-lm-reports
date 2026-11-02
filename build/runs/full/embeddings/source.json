@@ -1,7 +1,7 @@
 {
  "source": "/Users/ericgladstone/.cache/residue/embeddings.jsonl",
- "sha256": "2b78bc924b56fc8431f730c432ab3ab15a3975373a03fdcdcd58048e524c0888",
- "lines": 60088,
- "copied": "2026-11-02 10:35:25",
+ "sha256": "502f0690af7212a6064c0c9bde7f832402d395f363199d21d731fa5dd14f1309",
+ "lines": 67276,
+ "copied": "2026-11-02 12:18:46",
  "note": "gunzip and compare sha256 to restore ~/.cache/residue/embeddings.jsonl"
 }
