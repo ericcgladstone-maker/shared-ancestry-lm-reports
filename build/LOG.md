@@ -331,7 +331,7 @@ GPT checked the generation-order sentence, repository disclosure, reproducibilit
 - **Repository disclosure.** GPT recommended disclosing the repository in Comments to the Editor and drafted the text, which is saved at `tacl/submission/Comments_to_the_Editor_DRAFT_2026-11-02.md`. GPT also noted that making `redesign/` private during review would reduce discoverability, though git history would keep it. That decision is left to Eric.
 - **Filename.** The upload must be renamed to the submission number plus the first words of the title.
 
-## 2026-11-02 12:00 to 13:30 — Flexible set models, Haiku depth run, copying count, retitling
+## 2026-11-02 11:40 to 12:20 — Flexible set models, Haiku depth run, copying count, retitling
 
 Eric approved both items: a stronger comparator analysis, and Haiku depth at about $0.80. Both plans were written before their runs: `runs/full/analysis/stronger_comparators_PLAN.md` and `runs/depth_haiku/PLAN.md`.
 
