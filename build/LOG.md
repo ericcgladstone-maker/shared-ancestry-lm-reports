@@ -321,3 +321,12 @@ The reports that differ between structures are reports 2 and 3. The out-star's w
 The out-star's observation preceded both independent observations 2 and 3 in about 65% of blocks (p ≤ 0.001). This is expected by construction: that observation is the shared report-1 observation, which every structure in the block needs and which is generated whenever the first of them runs. These gaps are also measured in seconds.
 
 The result was added to the sheet as `order.*` (424 rows), and one sentence was added to the end of section 4.5. Limitations now lists the check as post hoc. Manifest rebuilt.
+
+## 2026-11-02 — GPT pre-submission check
+
+GPT checked the generation-order sentence, repository disclosure, reproducibility statement, and the PDF. It found no other problems: A4, anonymous, cross-references resolve, numbers agree with tables, within page allowances. Baseline saved as `tacl/main_draft7_pre_presub_2026-11-02.tex`. Edits:
+
+- **Section 4.5, generation order.** The sentence is now restricted to reports 2 and 3. The 40-second bound is now stated as the difference between mean generation times. The sign tests are described as treating blocks as independent. The less-balanced observation order is stated, with its cause.
+- **Reproducibility statement.** It now claims only the stored calls behind the reported analyses. It states that the language-model judge's outputs on a separate validation sample, which no reported result uses, are withheld until human coding is complete.
+- **Repository disclosure.** GPT recommended disclosing the repository in Comments to the Editor and drafted the text, which is saved at `tacl/submission/Comments_to_the_Editor_DRAFT_2026-11-02.md`. GPT also noted that making `redesign/` private during review would reduce discoverability, though git history would keep it. That decision is left to Eric.
+- **Filename.** The upload must be renamed to the submission number plus the first words of the title.
