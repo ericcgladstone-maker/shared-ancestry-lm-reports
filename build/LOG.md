@@ -371,3 +371,21 @@ Eric approved both items: a stronger comparator analysis, and Haiku depth at abo
 - Cuts to stay under ten content pages: 4.6 control paragraph condensed, one repeated Limitations sentence removed.
 
 Compiled at 15 pages: content ends on page 10, Appendix A is about 1.4 pages, and Appendix B about 2.6.
+
+## 2026-11-02, GPT comparator review
+
+GPT's reply is saved as `redesign/GPT_Review_Comparators_Haiku_Depth_2026-11-02.md`. Baseline saved as `tacl/main_draft9_pre_gpt4_2026-11-02.tex`. All five points were checked and accepted.
+
+- **Haiku duplicates.** Checked against `runs/depth_haiku/sets.jsonl`: W057 r1 used the same template (A:rewrite:1) twice, while W065 r1 (B:rewrite:2, B:rewrite:0) and W069 r0 (A:rewrite:5, A:rewrite:2) used different ones. The previous entry's claim, and the brief's, that all three drew the same template was wrong. Appendix A now says that two distinct rewrite calls returned byte-identical text, using the same template in one set and different templates in the other two.
+- **Score comparisons (4.1).** The sentence now says that this check did not estimate paired differences and that the later depth analyses estimated them for the selected statistic.
+- **Abstract and 4.1.** "compute no pairwise similarity" is now "do not explicitly compute pairwise similarities".
+- **Plan readings (4.1).** "about half" is now "about three-fifths" (0.122 of 0.209). The section now states that the gain-holds reading was met for every producer and that the shrink criterion was met for none. Verified from `stronger_comparators.json`: the strongest comparator lies below the relational interval in all five comparisons (for example, Gemini 0.786 against [0.875, 0.937]). This also corrects the previous entry's "about half".
+- **Copying (4.4).** The counts now bound the number of substantive rewrites from above, and the sentence says they do not measure how much the wording changed.
+
+The additions pushed the main text four lines onto page 11, so the new sentences were shortened. The paper compiles at 15 pages with content ending on page 10.
+
+**Metadata audit (Claude, independent of GPT's).** I checked the info dictionary, root catalog, annotations, and raw and decompressed streams.
+- The info dictionary holds only Creator, Producer, and CreationDate. There is no XMP, and the catalog holds only OpenAction (/Fit view) and named destinations.
+- No JavaScript, embedded files, or forms.
+- The 113 annotations are internal links plus DOI, ACL Anthology, OpenReview, PMLR, and arXiv citation links.
+- No match for the name, the site, the GitHub account, gmail, Cornell, local paths, or the repository name. "Eric" occurs only in Eric Mitchell.
