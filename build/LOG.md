@@ -330,3 +330,44 @@ GPT checked the generation-order sentence, repository disclosure, reproducibilit
 - **Reproducibility statement.** It now claims only the stored calls behind the reported analyses. It states that the language-model judge's outputs on a separate validation sample, which no reported result uses, are withheld until human coding is complete.
 - **Repository disclosure.** GPT recommended disclosing the repository in Comments to the Editor and drafted the text, which is saved at `tacl/submission/Comments_to_the_Editor_DRAFT_2026-11-02.md`. GPT also noted that making `redesign/` private during review would reduce discoverability, though git history would keep it. That decision is left to Eric.
 - **Filename.** The upload must be renamed to the submission number plus the first words of the title.
+
+## 2026-11-02 12:00 to 13:30 — Flexible set models, Haiku depth run, copying count, retitling
+
+Eric approved both items: a stronger comparator analysis, and Haiku depth at about $0.80. Both plans were written before their runs: `runs/full/analysis/stronger_comparators_PLAN.md` and `runs/depth_haiku/PLAN.md`.
+
+**Haiku depth run.** `run_depth.py` gained `--producer`, `--max-step`, `--out`, and `--run-cap`; its defaults reproduce the Gemini run. Dry run: 1,800 calls, sharing intact. Live run: 1,800 Haiku calls to three rewrites, all valid on the first attempt, $0.82. Anthropic spend is now $46.06 of its $46.67 cap. `DEPTH_DIR=runs/depth_haiku DEPTHS=1,2,3 python analyze_depth.py`, with depth 1 reproducing the full run (0.8563, 0.9821, 0.9848). Independent against out-star:
+- relational: 0.982, 0.966, 0.954;
+- pooled: 0.856, 0.834, 0.817;
+- gain: 0.126, 0.132, 0.137;
+- score: 0.985, 0.973, 0.965;
+- relational minus score: -0.003, -0.007, -0.012, every interval including zero;
+- single reports: equivalent at every depth under both learners.
+
+**Flexible set models.** `analyze_comparators.py` wrote `runs/full/analysis/stronger_comparators.md`. The strongest non-relational model was the embedding-dispersion model for Gemini (0.786) and rich logistic summaries for Haiku (0.876) and Luna (0.888). Relational minus the strongest:
+- Gemini 0.122 [0.091, 0.153]; Haiku 0.106 [0.072, 0.142]; Luna 0.085 [0.053, 0.121];
+- Gemini at five rewrites 0.158; Haiku at three 0.122.
+- All intervals exclude zero, so the plan's "gain holds" reading is met.
+- For Gemini the gain is about half the gain over the reference baseline (0.209).
+- Boosting the relational features did not improve on logistic regression; every interval includes zero.
+
+**Copying (post hoc).** Some rewrite calls return their input unchanged. This was recorded in verification, but the manuscript did not mention it. `analyze_copying.py` wrote `runs/full/analysis/copying.md`.
+- At one rewrite, 892 of 900 chains changed for both Gemini and Haiku.
+- Gemini chains changed the text at a mean of 4.12 of five calls, and at every call in 370 of 900. After three calls the mean is 2.70 for Gemini and 2.73 for Haiku.
+- In 3 of Haiku's 180 out-star sets, two rewrite positions drew the same template and Haiku returned byte-identical texts.
+- A check that the independent structure's same-prompt observations are never identical found none identical, for all producers.
+
+**Sheet and macros.** Sheet: 554 rows (`depthH.*`, `comp.*`, `copy.*`). Macros: `\NR` (one decimal) added.
+
+**Figure.** `fig_depth` now has two panels.
+
+**Manuscript.** Baseline saved as `tacl/main_draft8_pre_haiku_comparators_2026-11-02.tex`. Changes:
+- Title: "Detecting Shared Ancestry Among Reports from Networks of Language-Model Agents: A Controlled Experiment" (Eric, 2026-11-02).
+- New 4.1 paragraph on the flexible models, and Table 5 in Appendix B.
+- 4.4: Haiku paragraph and copying paragraph.
+- Abstract: comparator clause; the depth sentence now covers both producers.
+- Discussion: updated, and its repeated single-report detail cut.
+- Limitations: updated.
+- Appendix A: Haiku run, the flexible models, and the identical Haiku rewrites.
+- Cuts to stay under ten content pages: 4.6 control paragraph condensed, one repeated Limitations sentence removed.
+
+Compiled at 15 pages: content ends on page 10, Appendix A is about 1.4 pages, and Appendix B about 2.6.

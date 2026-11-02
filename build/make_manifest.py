@@ -25,7 +25,7 @@ FULL = os.path.join(HERE, "runs", "full")
 CACHE = os.path.expanduser("~/.cache/residue/embeddings.jsonl")
 ANALYSIS_CODE = ["analyze.py", "analyze_secondary.py", "analyze_anchored.py", "inference.py", "permutation_null.py",
                  "judge_run.py", "make_walkthrough.py", "make_manifest.py", "run.py", "requirements.txt",
-                 "replicate.py", "analyze_replication.py", "analyze_salience.py", "analyze_relational_checks.py", "analyze_transfer.py", "make_numbers.py", "analyze_review_checks.py", "run_depth.py", "analyze_depth.py", "analyze_generation_order.py", "make_validation_sample.py",
+                 "replicate.py", "analyze_replication.py", "analyze_salience.py", "analyze_relational_checks.py", "analyze_transfer.py", "make_numbers.py", "analyze_review_checks.py", "run_depth.py", "analyze_depth.py", "analyze_generation_order.py", "analyze_comparators.py", "analyze_copying.py", "make_validation_sample.py",
                  "score_validation.py"]
 
 

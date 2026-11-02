@@ -1,0 +1,11 @@
+180 blocks, 32938 full-run records available, code 11f936ef7106
+  blocks 20/180, calls made 296
+  blocks 40/180, calls made 479
+  blocks 60/180, calls made 646
+  blocks 80/180, calls made 843
+  blocks 100/180, calls made 1090
+  blocks 120/180, calls made 1258
+  blocks 140/180, calls made 1463
+  blocks 160/180, calls made 1652
+  blocks 180/180, calls made 1800
+{"blocks": 180, "set_rows": 1620, "calls_made": 1800, "time": 1793637355.685337, "spend_this_run": {"anthropic": 0.8158192000001492, "openai": 0.0, "google": 0.0}} errors 0

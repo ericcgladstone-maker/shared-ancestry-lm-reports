@@ -1,6 +1,10 @@
 """Deeper rewriting of the matched sets.
 
-    python run_depth.py [--dry-run] [--workers N]
+    python run_depth.py [--dry-run] [--workers N] [--producer P --max-step K --out NAME --run-cap USD]
+
+Defaults reproduce the Gemini run (runs/depth/). The Haiku run used
+--producer claude-haiku-5-5 --max-step 3 --out depth_haiku --run-cap 1.10
+(runs/depth_haiku/PLAN.md).
 
 Plan in runs/depth/PLAN.md, written before the run. Primary producer, full
 access, neutral arm, the 60 full-run worlds and replicates 0 to 2. Each
@@ -32,8 +36,7 @@ from residue.prompts import PER_FAMILY, render_with_inputs, target_words, templa
 from residue.store import CallStore  # noqa: E402
 
 STRUCTURES = ("IND", "DEP", "MIX")
-MAX_STEP = 5
-RUN_CAP = 1.50  # Google spend allowed for this run, on top of the provider cap
+PROVIDER = {"gemini-3.5-flash-lite": "google", "claude-haiku-5-5": "anthropic", "gpt-6-luna": "openai"}
 
 
 class Dry:
@@ -56,7 +59,7 @@ def step_template(spec, j, k):
     return template_id(spec.family, "rewrite", rng.randrange(PER_FAMILY))
 
 
-def block(spec, store, model):
+def block(spec, store, model, max_step):
     params = run.req_params(model)
     builders = {s: gr.STUDY2[f"{s}-full-neutral"] for s in STRUCTURES}
     res = run_block(spec, builders, store, model, model.version, params)  # step 1, all stored
@@ -71,7 +74,7 @@ def block(spec, store, model):
             node = nodes[f"m{j}"]
             text, key = node.text, node.key
             steps = [{"text": text, "key": key, "template_id": node.template_id}]
-            for k in range(2, MAX_STEP + 1):
+            for k in range(2, max_step + 1):
                 tid = step_template(spec, j, k)
                 key = make_key(study="S2", world=spec.world.world_id, replicate=spec.replicate, genre=spec.genre,
                                producer=spec.producer, family=spec.family, role=f"s2rw:g{j}:neutral:d{k}",
@@ -81,7 +84,7 @@ def block(spec, store, model):
                                          {"condition_first_seen": f"{st}-depth", "node": f"m{j}:d{k}", "fn": "rewrite"})
                 steps.append({"text": text, "key": key, "template_id": tid})
             chains.append(steps)
-        for k in range(1, MAX_STEP + 1):
+        for k in range(1, max_step + 1):
             rows.append({"world": spec.world.world_id, "rep": spec.replicate, "producer": spec.producer,
                          "family": spec.family, "structure": st, "access": "full", "arm": "neutral", "depth": k,
                          "texts": [c[k - 1]["text"] for c in chains], "keys": [c[k - 1]["key"] for c in chains],
@@ -93,21 +96,26 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--workers", type=int, default=24)
+    ap.add_argument("--producer", default=run.PRIMARY)
+    ap.add_argument("--max-step", type=int, default=5)
+    ap.add_argument("--out", default="depth")
+    ap.add_argument("--run-cap", type=float, default=1.50)  # spend allowed for this run, on top of the provider cap
     a = ap.parse_args()
-    out = os.path.join(HERE, "runs", "depth" + ("-dry" if a.dry_run else ""))
+    prov = PROVIDER[a.producer]
+    out = os.path.join(HERE, "runs", a.out + ("-dry" if a.dry_run else ""))
     os.makedirs(out, exist_ok=True)
     code_hash = run.snapshot(out)
     ledger = None if a.dry_run else adapters.Ledger(os.path.join(HERE, "smoke", "ledger.json"))
-    live = adapters.make(run.PRIMARY, ledger, role="producer", max_output_tokens=run.max_tokens("incident", run.PRIMARY))
+    live = adapters.make(a.producer, ledger, role="producer", max_output_tokens=run.max_tokens("incident", a.producer))
     model = Dry(live) if a.dry_run else live
     start = dict(ledger.spent) if ledger else {}
     worlds = run.load_worlds("full")
     reps = [0, 1, 2]
     fam = run.families(worlds, reps)
-    specs = [BlockSpec(w, r, "incident", run.PRIMARY, fam[(w.world_id, r)], run.RUN_SEED) for w in worlds for r in reps]
+    specs = [BlockSpec(w, r, "incident", a.producer, fam[(w.world_id, r)], run.RUN_SEED) for w in worlds for r in reps]
     with open(os.path.join(out, "config.jsonl"), "a") as fh:
         fh.write(json.dumps({"script": "run_depth.py", "dry_run": a.dry_run, "code_hash": code_hash,
-                             "run_seed": run.RUN_SEED, "producer": run.PRIMARY, "replicates": reps, "max_step": MAX_STEP,
+                             "run_seed": run.RUN_SEED, "producer": a.producer, "replicates": reps, "max_step": a.max_step, "run_cap": a.run_cap,
                              "worlds": [w.world_id for w in worlds], "params": run.req_params(model),
                              "started": time.time()}) + "\n")
     store = CallStore(os.path.join(out, "calls.jsonl"), extra={"code_hash": code_hash})
@@ -123,10 +131,10 @@ def main():
     def one(spec):
         if stop.is_set():
             return spec, None
-        if ledger and ledger.spent.get("google", 0.0) - start.get("google", 0.0) > RUN_CAP:
+        if ledger and ledger.spent.get(prov, 0.0) - start.get(prov, 0.0) > a.run_cap:
             stop.set()
-            raise adapters.BudgetExceeded(f"run cap {RUN_CAP} passed")
-        return spec, block(spec, store, model)
+            raise adapters.BudgetExceeded(f"run cap {a.run_cap} passed")
+        return spec, block(spec, store, model, a.max_step)
 
     rows, errors = [], {}
     with ThreadPoolExecutor(max_workers=a.workers) as ex:

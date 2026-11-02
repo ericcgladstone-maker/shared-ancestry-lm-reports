@@ -28,6 +28,9 @@ SOURCES = {
     "review": os.path.join(A, "review_checks.json"),
     "depth": os.path.join("runs", "depth", "analysis.json"),
     "order": os.path.join(A, "generation_order.json"),
+    "depth_haiku": os.path.join("runs", "depth_haiku", "analysis.json"),
+    "comparators": os.path.join(A, "stronger_comparators.json"),
+    "copying": os.path.join(A, "copying.json"),
 }
 PRODUCERS = ("gemini-3.5-flash-lite", "claude-haiku-5-5", "gpt-6-luna")
 READERS = ("claude-sonnet-5-5", "gpt-6.1-terra")
@@ -206,21 +209,49 @@ def main():
                     f"Untrained score {k}, IND vs DEP, {p_}: AUC", "Post hoc. No training. Rarity tables per fold, own world removed.")
 
     # deeper rewriting (runs/depth/PLAN.md), primary producer
-    if "depth" in J:
-        note = "Planned in runs/depth/PLAN.md before the run. Depth 1 is the full run's texts."
-        for d in J["depth"]["depths"]:
+    for src, pre, who, plan in (("depth", "depth", "primary producer", "runs/depth/PLAN.md"),
+                                ("depth_haiku", "depthH", "claude-haiku-5-5", "runs/depth_haiku/PLAN.md")):
+        if src not in J:
+            continue
+        note = f"Planned in {plan} before the run. Depth 1 is the full run's texts."
+        for d in J[src]["depths"]:
             for part in ("pooled", "relational", "gain", "score", "relational_minus_score"):
-                row(f"depth.{d}.{part}", J, "depth", ["depths", d, "binary", part],
-                    f"Depth {d}, IND vs DEP, primary producer: {part}", note)
+                row(f"{pre}.{d}.{part}", J, src, ["depths", d, "binary", part],
+                    f"Depth {d}, IND vs DEP, {who}: {part}", note)
             for part in ("pooled", "relational"):
-                row(f"depth.{d}.three.{part}", J, "depth", ["depths", d, "three", part],
-                    f"Depth {d}, three structures, macro AUC: {part}", note)
+                row(f"{pre}.{d}.three.{part}", J, src, ["depths", d, "three", part],
+                    f"Depth {d}, three structures, {who}, macro AUC: {part}", note)
             for lrn in ("features", "embedding"):
-                row(f"depth.{d}.unshared.{lrn}", J, "depth", ["depths", d, "single_unshared", lrn],
-                    f"Depth {d}, single reports 2 and 3, {lrn}: AUC, 90% interval", note + " Equivalence band 0.43 to 0.57.")
-            for k in J["depth"]["depths"][d]["binary"]["unfitted"]:
-                row(f"depth.{d}.unfitted.{k}", J, "depth", ["depths", d, "binary", "unfitted", k],
-                    f"Depth {d}, unfitted score {k}, IND vs DEP: AUC", note)
+                row(f"{pre}.{d}.unshared.{lrn}", J, src, ["depths", d, "single_unshared", lrn],
+                    f"Depth {d}, {who}, single reports 2 and 3, {lrn}: AUC, 90% interval", note + " Equivalence band 0.43 to 0.57.")
+            for k in J[src]["depths"][d]["binary"]["unfitted"]:
+                row(f"{pre}.{d}.unfitted.{k}", J, src, ["depths", d, "binary", "unfitted", k],
+                    f"Depth {d}, {who}, unfitted score {k}, IND vs DEP: AUC", note)
+
+    # stronger comparison models (runs/full/analysis/stronger_comparators_PLAN.md)
+    if "comparators" in J:
+        note = "Planned in stronger_comparators_PLAN.md before the analysis ran, after the main results."
+        for key, r in J["comparators"].items():
+            p_, d = key.split("|")
+            for m in r["auc"]:
+                row(f"comp.{p_}.{d}.{m}", J, "comparators", [key, "auc", m], f"Comparator {m}, {p_}, {d} rewrites: AUC", note)
+            for m in r["relational_minus"]:
+                row(f"comp.{p_}.{d}.relational_minus_{m}", J, "comparators", [key, "relational_minus", m],
+                    f"Relational minus {m}, {p_}, {d} rewrites", note)
+            row(f"comp.{p_}.{d}.boosted_minus_relational", J, "comparators", [key, "relational_boosted_minus_relational"],
+                f"Relational boosted minus relational, {p_}, {d} rewrites", note)
+            ROWS.append({"key": f"comp.{p_}.{d}.best", "value": r["best_nonrelational"], "description": "Best non-relational comparator",
+                         "source": SOURCES["comparators"], "path": f"{key}/best_nonrelational", "note": note})
+
+    # copying (post hoc)
+    if "copying" in J:
+        for p_, r in J["copying"].items():
+            row(f"copy.{p_}.dep_identical", J, "copying", [p_, "dep_sets_with_identical_reports_depth1"],
+                f"{p_}: out-star sets with two identical reports at one rewrite", "Post hoc.")
+            for d in r["by_depth"]:
+                for part, kname in (("mean_changed", "steps_mean"), ("all_changed", "all_steps")):
+                    row(f"copy.{p_}.{d}.{kname}", J, "copying", [p_, "by_depth", d, part],
+                        f"{p_}, {d} rewrite calls: {part}", "Post hoc. Changed means output not identical to input.")
 
     # generation order (post hoc, outside reader)
     if "order" in J:
