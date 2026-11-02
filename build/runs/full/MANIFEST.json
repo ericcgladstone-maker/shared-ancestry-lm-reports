@@ -1,5 +1,5 @@
 {
- "written": "2026-11-02 10:35:25",
+ "written": "2026-11-02 11:09:58",
  "python": "3.9.6",
  "platform": "macOS-26.6.2-arm64-arm-64bit",
  "pip_freeze": [
@@ -193,8 +193,8 @@
   "llama3.1:8b": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e"
  },
  "analysis_code": {
-  "hash": "4170f046d14af3f234f51d4da08c3b1e9ff0b2fe3d32736c66f6e7b613700cb0",
-  "snapshot": "runs/full/analysis/code/4170f046d14a",
+  "hash": "a54c2498c1c63e9769712d458df1cbb4a7dc592e7433c39ae93f14bc3a165b9c",
+  "snapshot": "runs/full/analysis/code/a54c2498c1c6",
   "files": {
    "analyze.py": "aab5737ecce6d53d9b7afddc59b96a24bac679f66ec13a402c69630100182b8e",
    "analyze_secondary.py": "5e4db55846b74e8456ddcadaeb152bb6c58bde14e37b2b7f262d55f3f67c410e",
@@ -203,7 +203,7 @@
    "permutation_null.py": "c74f3ff68d86fe8a8859871756eadb9792857657dcb6083176e268eadfafa9c7",
    "judge_run.py": "9bc96a20cf4112eb1ca7caf459e0a4d3dde7c5daaac706013c9d6204852b7544",
    "make_walkthrough.py": "be2a8848a8bb38d98b2b8470be3e7861b681c9382a3cc5a910e998e21cbdc108",
-   "make_manifest.py": "30bb6cb855fcf97aca8942dce8ddc12c029295f4b29fcd8605bcc68b329e8a53",
+   "make_manifest.py": "5d4620d91e8faffb38a98827517336fedf8876be7806f5651bd84ac92e6739e2",
    "run.py": "244c11c7e9060d22868e39f4b2a7562bcf5b3e5ac1b9306fdf803a3600ce0a58",
    "requirements.txt": "2f73469f2905c963391b2d0ae96736f8f7627b5c89b5e1603d037584c2d71132",
    "replicate.py": "3084a13556deb26b2654797e4ca8cc0dbaf1d7e5472b9a9e4e16e65ec23a9c35",
@@ -211,10 +211,11 @@
    "analyze_salience.py": "5bc3174023f95433e273c6c7cc407f1fa1020d502bfa7e0c69f0983a0d1642c6",
    "analyze_relational_checks.py": "820e0a0016f7343a3c3cdad1eea3c428918d454447ff4a272770d51ea379566d",
    "analyze_transfer.py": "efc31ececdedff3544be42b6c7a321c58b3a55ecae2677a465848f7bd9d54140",
-   "make_numbers.py": "df5f069b0dc25563129411d2f33a8c74fe5063585b00bbf6651c7fa8bcfba31b",
+   "make_numbers.py": "40912c676edb03cfd93afc0718fd3e943fff2e8ed65599c2c6dc1c5e69460484",
    "analyze_review_checks.py": "93cba9f055d66fbed35291453206a2cd92e1171c3558ace52764adcece61724d",
    "run_depth.py": "4400f5bd7d7cdfd03580ee640f6b31d2eee0f4a917c88b5c8676937afe691ee8",
    "analyze_depth.py": "ae4a05bb2aba3ff5ba872eba40198f9037fb28d0116ddfb31830ce581131ddd6",
+   "analyze_generation_order.py": "83847b1c1179cd24f4d16567ebdbd443dfaa04c0adba97ce0be009673c16c3ff",
    "make_validation_sample.py": "56bf1a3f2955aa2bdf6c66f78b9e19be55c626706c71ef228df66cf90d3597b2",
    "score_validation.py": "a6097cbfafd532fc06c876d7ff7d0d3d514c859f5b65cca6e095746394a5b046",
    "residue/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -695,6 +696,16 @@
    "sha256": "b5d68747b561cd917a126ba807e4ab1ae5e79f3673570070395a6c3bbb968030",
    "bytes": 3113,
    "modified": "2026-11-01 23:32:44"
+  },
+  "runs/full/analysis/generation_order.json": {
+   "sha256": "cb3089b21acd238d28fb1f3e5bc1c73bc4c58210f27d0cf326ea039eccb35df8",
+   "bytes": 136145,
+   "modified": "2026-11-02 11:09:17"
+  },
+  "runs/full/analysis/generation_order.md": {
+   "sha256": "0b66e9ee19961bc99f247781393396f074e168628104a4c22046fde0f3fbafc6",
+   "bytes": 713,
+   "modified": "2026-11-02 11:09:17"
   },
   "runs/full/analysis/inference.json": {
    "sha256": "e28391761650e0046a3dc9e61052a894d42e7fb8bd735a18dc80c3c03970e5f4",
@@ -1617,6 +1628,226 @@
    "modified": "2026-10-30 15:54:00"
   },
   "runs/full/analysis/code/2e270018c09c/residue/worlds.py": {
+   "sha256": "2217f41ef328a9c0d47e60900edbd1263a24558c7f849b4468b5c73262988ef9",
+   "bytes": 2595,
+   "modified": "2026-10-30 13:25:17"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/MANIFEST.json": {
+   "sha256": "b3e55fb023fe95ce7a9bd483657e11b0148da6ea2de2f79d8da815fdbabb6876",
+   "bytes": 4056,
+   "modified": "2026-11-02 11:09:59"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/analyze.py": {
+   "sha256": "aab5737ecce6d53d9b7afddc59b96a24bac679f66ec13a402c69630100182b8e",
+   "bytes": 19990,
+   "modified": "2026-10-31 21:43:26"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/analyze_anchored.py": {
+   "sha256": "d4e2eb32225f3b4ecc38d6f83db282b22a1ec52bedf282c4fd02499620e08950",
+   "bytes": 17148,
+   "modified": "2026-10-31 21:43:26"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/analyze_depth.py": {
+   "sha256": "ae4a05bb2aba3ff5ba872eba40198f9037fb28d0116ddfb31830ce581131ddd6",
+   "bytes": 8686,
+   "modified": "2026-11-02 09:23:27"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/analyze_generation_order.py": {
+   "sha256": "83847b1c1179cd24f4d16567ebdbd443dfaa04c0adba97ce0be009673c16c3ff",
+   "bytes": 4002,
+   "modified": "2026-11-02 11:09:11"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/analyze_relational_checks.py": {
+   "sha256": "820e0a0016f7343a3c3cdad1eea3c428918d454447ff4a272770d51ea379566d",
+   "bytes": 22584,
+   "modified": "2026-11-02 00:44:01"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/analyze_replication.py": {
+   "sha256": "4cb9606b6be12c7d22f32ecd9514ad7a8f4d1dfb3c2fc30e203268db48051052",
+   "bytes": 7336,
+   "modified": "2026-10-31 15:52:29"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/analyze_review_checks.py": {
+   "sha256": "93cba9f055d66fbed35291453206a2cd92e1171c3558ace52764adcece61724d",
+   "bytes": 6122,
+   "modified": "2026-11-02 01:26:14"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/analyze_salience.py": {
+   "sha256": "5bc3174023f95433e273c6c7cc407f1fa1020d502bfa7e0c69f0983a0d1642c6",
+   "bytes": 12227,
+   "modified": "2026-10-31 15:53:58"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/analyze_secondary.py": {
+   "sha256": "5e4db55846b74e8456ddcadaeb152bb6c58bde14e37b2b7f262d55f3f67c410e",
+   "bytes": 36458,
+   "modified": "2026-10-31 21:43:26"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/analyze_transfer.py": {
+   "sha256": "efc31ececdedff3544be42b6c7a321c58b3a55ecae2677a465848f7bd9d54140",
+   "bytes": 7442,
+   "modified": "2026-11-01 23:32:44"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/inference.py": {
+   "sha256": "649c2f85bfa8fc1a5ef4fa3e897075b4609a22ff7212e7cb8779be3ee7fd41e6",
+   "bytes": 9497,
+   "modified": "2026-10-31 21:44:29"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/judge_run.py": {
+   "sha256": "9bc96a20cf4112eb1ca7caf459e0a4d3dde7c5daaac706013c9d6204852b7544",
+   "bytes": 2371,
+   "modified": "2026-10-31 09:16:13"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/make_manifest.py": {
+   "sha256": "5d4620d91e8faffb38a98827517336fedf8876be7806f5651bd84ac92e6739e2",
+   "bytes": 5376,
+   "modified": "2026-11-02 11:09:58"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/make_numbers.py": {
+   "sha256": "40912c676edb03cfd93afc0718fd3e943fff2e8ed65599c2c6dc1c5e69460484",
+   "bytes": 17705,
+   "modified": "2026-11-02 11:09:36"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/make_validation_sample.py": {
+   "sha256": "56bf1a3f2955aa2bdf6c66f78b9e19be55c626706c71ef228df66cf90d3597b2",
+   "bytes": 10320,
+   "modified": "2026-10-31 16:01:29"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/make_walkthrough.py": {
+   "sha256": "be2a8848a8bb38d98b2b8470be3e7861b681c9382a3cc5a910e998e21cbdc108",
+   "bytes": 5555,
+   "modified": "2026-10-31 08:09:25"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/permutation_null.py": {
+   "sha256": "c74f3ff68d86fe8a8859871756eadb9792857657dcb6083176e268eadfafa9c7",
+   "bytes": 2799,
+   "modified": "2026-10-31 08:40:19"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/replicate.py": {
+   "sha256": "3084a13556deb26b2654797e4ca8cc0dbaf1d7e5472b9a9e4e16e65ec23a9c35",
+   "bytes": 4000,
+   "modified": "2026-10-31 15:51:26"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/requirements.txt": {
+   "sha256": "2f73469f2905c963391b2d0ae96736f8f7627b5c89b5e1603d037584c2d71132",
+   "bytes": 729,
+   "modified": "2026-10-30 19:24:08"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/run.py": {
+   "sha256": "244c11c7e9060d22868e39f4b2a7562bcf5b3e5ac1b9306fdf803a3600ce0a58",
+   "bytes": 57036,
+   "modified": "2026-10-30 23:28:42"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/run_depth.py": {
+   "sha256": "4400f5bd7d7cdfd03580ee640f6b31d2eee0f4a917c88b5c8676937afe691ee8",
+   "bytes": 7510,
+   "modified": "2026-11-02 09:22:00"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/score_validation.py": {
+   "sha256": "a6097cbfafd532fc06c876d7ff7d0d3d514c859f5b65cca6e095746394a5b046",
+   "bytes": 10690,
+   "modified": "2026-10-31 16:01:29"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/residue/__init__.py": {
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0,
+   "modified": "2026-10-30 13:28:08"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/residue/adapters.py": {
+   "sha256": "afd507cab4342b5e2e54edd2dd4a0641468374331cb90065503d7cebe97e5cc3",
+   "bytes": 11781,
+   "modified": "2026-10-30 23:38:54"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/residue/allocators.py": {
+   "sha256": "e1d86e15616cd2c894d7ab37cdb5447ece111f110207cc1a3d610c8ecc9a778f",
+   "bytes": 5030,
+   "modified": "2026-10-30 13:25:17"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/residue/analysis.py": {
+   "sha256": "09c5df838775b5f69f51eacb53c55290493812df5d987c9b5cff91e8f08c2827",
+   "bytes": 5920,
+   "modified": "2026-10-30 13:49:40"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/residue/audit.py": {
+   "sha256": "ec8796fa2e81d350f048faa069a7be5f0f6231f560d3d1ca27855f6b96fc2ad9",
+   "bytes": 2759,
+   "modified": "2026-10-30 20:31:01"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/residue/dispatcher.py": {
+   "sha256": "eb186654a18c68019acc0a0fca9a897206865fac8392179aad976bba0405b5a9",
+   "bytes": 3985,
+   "modified": "2026-10-30 20:08:58"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/residue/embed.py": {
+   "sha256": "f155917029feef8e57727764302d5086db9db62cad76f7f9f443d02f70f78a1f",
+   "bytes": 2385,
+   "modified": "2026-10-30 20:09:09"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/residue/features.py": {
+   "sha256": "2a239a81371628d38c01faf4bda6354068fe8a6e2ed419a5d4b3839ab55495fd",
+   "bytes": 10618,
+   "modified": "2026-10-31 21:43:19"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/residue/fixtures.py": {
+   "sha256": "fe51fc6ccab46c4cd4b51a6ac68caae9c3f369edef0aade08ce44b403174cb5b",
+   "bytes": 5535,
+   "modified": "2026-10-30 13:26:21"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/residue/graphs.py": {
+   "sha256": "69aba0580efcc93c0a6ad312a6fd6f3edba58962aaa45de2b26a853c8d6f906e",
+   "bytes": 6916,
+   "modified": "2026-10-30 13:25:44"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/residue/histories.py": {
+   "sha256": "c701570bcdb63527d43a5eb57e2269a1b1f0359dba6e4380c5648bf7dfc3b06a",
+   "bytes": 3062,
+   "modified": "2026-10-30 13:26:21"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/residue/judge_matcher.py": {
+   "sha256": "49724172725a70f4f266f289019cf1cc2c02f61b1f7cf3dd3c0d0a780787c4ec",
+   "bytes": 5177,
+   "modified": "2026-10-31 09:15:27"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/residue/keys.py": {
+   "sha256": "a39b7f865852c3b88ac9474b1ebbb08b5be547441b78cc982b46e2841634994f",
+   "bytes": 2192,
+   "modified": "2026-10-30 13:25:17"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/residue/matcher.py": {
+   "sha256": "a9b0e0c9f3d7547bc19b2d2c22b485e2e121fe74eedda7d28c7915457db074b6",
+   "bytes": 8354,
+   "modified": "2026-10-30 20:30:00"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/residue/models.py": {
+   "sha256": "02cc580d3d151c3d523f8eeeba9fff051461d7a299596568920e8900c7f6cbb6",
+   "bytes": 1205,
+   "modified": "2026-10-30 13:27:28"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/residue/predictor.py": {
+   "sha256": "b518cd16fd996babdd325153ec8ae276514ce69b455acbb14d98554f3cde0286",
+   "bytes": 5226,
+   "modified": "2026-10-31 21:44:09"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/residue/prompts.py": {
+   "sha256": "49e3fb9bf3e98355404be6a3019ae4d5dc3b9990208141a83533ecd86c7e1ed6",
+   "bytes": 4713,
+   "modified": "2026-10-30 13:45:32"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/residue/readers.py": {
+   "sha256": "9c25b61247f2e4b830f25f813580110bf6cb11cb4c866e2098e8271715f06c3c",
+   "bytes": 13468,
+   "modified": "2026-10-30 23:23:58"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/residue/store.py": {
+   "sha256": "387a81a3eb6ec85dd1b5006e8dc3da58ed49c0c0522477efb186875fcc1a8af9",
+   "bytes": 5283,
+   "modified": "2026-10-30 23:21:41"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/residue/worldgen.py": {
+   "sha256": "37f64ccf3e8c985e19a86afa7f54d2dd652a090ef921050439fedb827f40e726",
+   "bytes": 19495,
+   "modified": "2026-10-30 15:54:00"
+  },
+  "runs/full/analysis/code/a54c2498c1c6/residue/worlds.py": {
    "sha256": "2217f41ef328a9c0d47e60900edbd1263a24558c7f849b4468b5c73262988ef9",
    "bytes": 2595,
    "modified": "2026-10-30 13:25:17"

@@ -27,6 +27,7 @@ SOURCES = {
     "invariance": os.path.join(A, "invariance_corrected.json"),
     "review": os.path.join(A, "review_checks.json"),
     "depth": os.path.join("runs", "depth", "analysis.json"),
+    "order": os.path.join(A, "generation_order.json"),
 }
 PRODUCERS = ("gemini-3.5-flash-lite", "claude-haiku-5-5", "gpt-6-luna")
 READERS = ("claude-sonnet-5-5", "gpt-6.1-terra")
@@ -220,6 +221,13 @@ def main():
             for k in J["depth"]["depths"][d]["binary"]["unfitted"]:
                 row(f"depth.{d}.unfitted.{k}", J, "depth", ["depths", d, "binary", "unfitted", k],
                     f"Depth {d}, unfitted score {k}, IND vs DEP: AUC", note)
+
+    # generation order (post hoc, outside reader)
+    if "order" in J:
+        for p_ in PRODUCERS:
+            for part in ("blocks", "dep_reports_first", "p", "median_lead_s"):
+                row(f"order.{p_}.{part}", J, "order", [p_, part], f"Generation order, {p_}: {part}",
+                    "Post hoc. Reports 2 and 3 of IND and DEP, full access, neutral; sign test two-sided.")
 
     # cross-producer transfer
     if "transfer" in J:

@@ -296,3 +296,28 @@ At Eric's request, GPT ran a narrow check of `tacl/main.tex` and `main.pdf` agai
 Still open before submission:
 - Eric's decisions on code and data release, and on submission.
 - The outside reader's generation-order question, which can be checked from existing call records.
+
+## 2026-11-02 — Public GitHub release
+
+Eric authorized publishing everything. He chose a new repository, chose to hold the manuscript until acceptance, and chose to include all of `redesign/`.
+
+- **Repository.** https://github.com/ericcgladstone-maker/shared-ancestry-lm-reports (public), staged at `~/code/shared-ancestry-lm-reports`, outside Drive, so no git repository was created in Drive.
+- **Contents.**
+  - `build/`, without dry runs, `__pycache__`, the embeddings folder, or `validation/judge`. The judge's judgments on the validation sample are withheld until human coding is finished.
+  - `redesign/`, with the `.gdoc` stubs replaced by Markdown exports of the 17 GPT Google Docs in `redesign/gpt_google_docs/`.
+  - Root README, MIT license for code, and CC BY 4.0 for data.
+- **Compression.** Records over 20 MB are gzipped in the repository only. The Drive copies are unchanged, so MANIFEST hashes refer to the uncompressed files.
+- **Embeddings.** `embeddings.jsonl.gz` (SHA-256 491b79b7…, listed in MANIFEST) is attached to release v1.0. `source.json` and a pointer README are in `build/runs/full/embeddings/`.
+- **Checks.** A secret scan (key patterns, private keys) found nothing.
+- **Known exposure.** Absolute paths in some logs and in MANIFEST include the Drive folder name, which contains Eric's email address. They were left as recorded.
+- **Manuscript.** The reproducibility statement in `tacl/main.tex` now says that code, prompts, worlds, stored calls, analysis records, and plans are released publicly under open licenses, with the location withheld for anonymous review, as TACL requires. The repository does not contain the manuscript.
+
+## 2026-11-02 — Generation-order check
+
+This post hoc check answers the outside reader's question and makes no model calls. `analyze_generation_order.py` rebuilt the independent and out-star full-access neutral sets through a read-only producer and looked up each stored call's time. It wrote `runs/full/analysis/generation_order.md` and `.json`.
+
+The reports that differ between structures are reports 2 and 3. The out-star's were generated first in 102, 94, and 97 of 180 blocks (Gemini, Haiku, Luna), with two-sided sign tests giving p = 0.086, 0.602, and 0.333. Median leads were 1.3, 0.4, and 1.4 s, and the largest gap was 38 s.
+
+The out-star's observation preceded both independent observations 2 and 3 in about 65% of blocks (p ≤ 0.001). This is expected by construction: that observation is the shared report-1 observation, which every structure in the block needs and which is generated whenever the first of them runs. These gaps are also measured in seconds.
+
+The result was added to the sheet as `order.*` (424 rows), and one sentence was added to the end of section 4.5. Limitations now lists the check as post hoc. Manifest rebuilt.

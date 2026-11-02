@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02 10:32",
+ "generated": "2026-11-02 11:09",
  "source_sha256": {
   "text_only": "9913c7adfdce55028a9f6a2fee400c7bab670261f2092cfa06b0ce90a3822fab",
   "secondary": "f607bf1132c1573b28119d67efc596fdc78c5f02a340c8213737186af15236e8",
@@ -9,7 +9,8 @@
   "replication": "9e89ae7b479f4efcfedecf66b8442b72f1ea5d19bc3cb34dfc6be44263b7bbc5",
   "invariance": "3e0b2c8823320c1ce400ee965c6537998a532f2cb8baa16a3145e791e92237d1",
   "review": "cacba5b8da6850086aac1c7054f7c015bb014399c853e07da470115e9c67fe9c",
-  "depth": "f424ca2ad3c648dfa945866e6763510d5a56f5fea32638fc799a2d3e989fe5c5"
+  "depth": "f424ca2ad3c648dfa945866e6763510d5a56f5fea32638fc799a2d3e989fe5c5",
+  "order": "cb3089b21acd238d28fb1f3e5bc1c73bc4c58210f27d0cf326ea039eccb35df8"
  },
  "rows": [
   {
@@ -4639,6 +4640,102 @@
    "source": "runs/depth/analysis.json",
    "path": "depths/5/binary/unfitted/sentence_order_similarity_min",
    "note": "Planned in runs/depth/PLAN.md before the run. Depth 1 is the full run's texts."
+  },
+  {
+   "key": "order.gemini-3.5-flash-lite.blocks",
+   "value": 180,
+   "description": "Generation order, gemini-3.5-flash-lite: blocks",
+   "source": "runs/full/analysis/generation_order.json",
+   "path": "gemini-3.5-flash-lite/blocks",
+   "note": "Post hoc. Reports 2 and 3 of IND and DEP, full access, neutral; sign test two-sided."
+  },
+  {
+   "key": "order.gemini-3.5-flash-lite.dep_reports_first",
+   "value": 102,
+   "description": "Generation order, gemini-3.5-flash-lite: dep_reports_first",
+   "source": "runs/full/analysis/generation_order.json",
+   "path": "gemini-3.5-flash-lite/dep_reports_first",
+   "note": "Post hoc. Reports 2 and 3 of IND and DEP, full access, neutral; sign test two-sided."
+  },
+  {
+   "key": "order.gemini-3.5-flash-lite.p",
+   "value": 0.08618731332869517,
+   "description": "Generation order, gemini-3.5-flash-lite: p",
+   "source": "runs/full/analysis/generation_order.json",
+   "path": "gemini-3.5-flash-lite/p",
+   "note": "Post hoc. Reports 2 and 3 of IND and DEP, full access, neutral; sign test two-sided."
+  },
+  {
+   "key": "order.gemini-3.5-flash-lite.median_lead_s",
+   "value": 1.2846696376800537,
+   "description": "Generation order, gemini-3.5-flash-lite: median_lead_s",
+   "source": "runs/full/analysis/generation_order.json",
+   "path": "gemini-3.5-flash-lite/median_lead_s",
+   "note": "Post hoc. Reports 2 and 3 of IND and DEP, full access, neutral; sign test two-sided."
+  },
+  {
+   "key": "order.claude-haiku-5-5.blocks",
+   "value": 180,
+   "description": "Generation order, claude-haiku-5-5: blocks",
+   "source": "runs/full/analysis/generation_order.json",
+   "path": "claude-haiku-5-5/blocks",
+   "note": "Post hoc. Reports 2 and 3 of IND and DEP, full access, neutral; sign test two-sided."
+  },
+  {
+   "key": "order.claude-haiku-5-5.dep_reports_first",
+   "value": 94,
+   "description": "Generation order, claude-haiku-5-5: dep_reports_first",
+   "source": "runs/full/analysis/generation_order.json",
+   "path": "claude-haiku-5-5/dep_reports_first",
+   "note": "Post hoc. Reports 2 and 3 of IND and DEP, full access, neutral; sign test two-sided."
+  },
+  {
+   "key": "order.claude-haiku-5-5.p",
+   "value": 0.6019687530156479,
+   "description": "Generation order, claude-haiku-5-5: p",
+   "source": "runs/full/analysis/generation_order.json",
+   "path": "claude-haiku-5-5/p",
+   "note": "Post hoc. Reports 2 and 3 of IND and DEP, full access, neutral; sign test two-sided."
+  },
+  {
+   "key": "order.claude-haiku-5-5.median_lead_s",
+   "value": 0.43244850635528564,
+   "description": "Generation order, claude-haiku-5-5: median_lead_s",
+   "source": "runs/full/analysis/generation_order.json",
+   "path": "claude-haiku-5-5/median_lead_s",
+   "note": "Post hoc. Reports 2 and 3 of IND and DEP, full access, neutral; sign test two-sided."
+  },
+  {
+   "key": "order.gpt-6-luna.blocks",
+   "value": 180,
+   "description": "Generation order, gpt-6-luna: blocks",
+   "source": "runs/full/analysis/generation_order.json",
+   "path": "gpt-6-luna/blocks",
+   "note": "Post hoc. Reports 2 and 3 of IND and DEP, full access, neutral; sign test two-sided."
+  },
+  {
+   "key": "order.gpt-6-luna.dep_reports_first",
+   "value": 97,
+   "description": "Generation order, gpt-6-luna: dep_reports_first",
+   "source": "runs/full/analysis/generation_order.json",
+   "path": "gpt-6-luna/dep_reports_first",
+   "note": "Post hoc. Reports 2 and 3 of IND and DEP, full access, neutral; sign test two-sided."
+  },
+  {
+   "key": "order.gpt-6-luna.p",
+   "value": 0.3325790904569385,
+   "description": "Generation order, gpt-6-luna: p",
+   "source": "runs/full/analysis/generation_order.json",
+   "path": "gpt-6-luna/p",
+   "note": "Post hoc. Reports 2 and 3 of IND and DEP, full access, neutral; sign test two-sided."
+  },
+  {
+   "key": "order.gpt-6-luna.median_lead_s",
+   "value": 1.368465781211853,
+   "description": "Generation order, gpt-6-luna: median_lead_s",
+   "source": "runs/full/analysis/generation_order.json",
+   "path": "gpt-6-luna/median_lead_s",
+   "note": "Post hoc. Reports 2 and 3 of IND and DEP, full access, neutral; sign test two-sided."
   },
   {
    "key": "transfer.IND_vs_DEP.gemini-3.5-flash-lite__to__gemini-3.5-flash-lite.pooled",
