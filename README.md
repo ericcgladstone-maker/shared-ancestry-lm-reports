@@ -2,7 +2,7 @@
 
 Code, prompts, constructed worlds, every stored model call, the analysis records, and the full design history for a study of what a set of final reports reveals about whether they share an upstream text. Several reports that agree on an event may descend from separately written drafts or from rewrites of one earlier draft. In controlled networks of language-model agents, each final report has the same distribution under every structure, so any difference between structures lies in the relations among reports. The study compares single-report, pooled, and relational representations of a set across three producers (Gemini 3.5 Flash-Lite, Claude Haiku 5.5, and GPT-6 Luna), and extends the main comparison for the primary producer to five rewrites between each observation and each final report.
 
-A manuscript is in preparation. It will be added here after peer review.
+A manuscript reporting this study is under review. It will be added here after peer review.
 
 ## Layout
 
